@@ -4,7 +4,7 @@
   >
     <img
       class="hidden md:block absolute inset-0 w-1/2 h-1/2 mx-auto my-auto bg-cover bg-center"
-      src=".\assets\footer/footer-bg.png"
+      src="../assets/footer/footer-bg.png"
       alt="Background Image"
     />
     <div
