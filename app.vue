@@ -20,7 +20,9 @@ import Sambutan from '~/src/components/Sambutan.vue'
 import Galeri from '~/src/components/Galeri.vue'
 import Dharma from '~/src/components/Dharma.vue'
 import Berita from '~/src/components/Berita.vue'
+import Informasi from './src/components/Informasi.vue' 
 import Footerr from '~/src/components/Footerr.vue'
+
 </script>
 
 <style lang="css" scoped></style>
