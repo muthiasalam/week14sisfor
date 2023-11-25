@@ -90,7 +90,7 @@
             <div class="relative h-40 w-full">
               <img
                 class="h-full w-full"
-                src="./assets/berita/imgb4.jpg"
+                src="../assets/berita/imgb4.jpg"
                 alt="News Image 4"
               />
               <div
