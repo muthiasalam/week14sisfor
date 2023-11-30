@@ -18,7 +18,7 @@
     <section class="slides-row flex h-full w-full z-0">
       <div class="slide w-full h-full relative" v-show="currentIndex === 0">
         <img
-          src=".../assets/banner/banner1.png"
+          src="../assets/banner/banner1.png"
           class="w-full h-full object-cover"
         />
         <div
@@ -27,7 +27,7 @@
       </div>
       <div class="slide w-full relative" v-show="currentIndex === 1">
         <img
-          src=".../assets/banner/banner10.jpg"
+          src="../assets/banner/banner10.jpg"
           class="w-full h-full object-cover"
         />
         <div
@@ -36,7 +36,7 @@
       </div>
       <div class="slide w-full h-full relative" v-show="currentIndex === 2">
         <img
-          src=".../assets/banner/banner3.png"
+          src="../assets/banner/banner3.png"
           class="w-full h-full object-cover"
         />
         <div
@@ -72,21 +72,16 @@ export default {
     return {
       currentIndex: 0,
       autoplayInterval: null,
-      slideCount: 4,
+      slideCount: 4, // Jumlah slide
+      dots: new Array(4).fill(null),
     };
-  },
-  computed: {
-    dots() {
-      return new Array(this.slideCount).fill(null);
-    },
   },
   methods: {
     nextSlide() {
       this.currentIndex = (this.currentIndex + 1) % this.slideCount;
     },
     prevSlide() {
-      this.currentIndex =
-        (this.currentIndex - 1 + this.slideCount) % this.slideCount;
+      this.currentIndex = (this.currentIndex - 1 + this.slideCount) % this.slideCount;
     },
     goToSlide(index) {
       this.currentIndex = index;
@@ -103,5 +98,6 @@ export default {
   created() {
     this.startAutoplay();
   },
-}
+};
+
 </script>

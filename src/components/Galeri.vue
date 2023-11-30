@@ -191,3 +191,91 @@
   </div>
 
 </template>
+
+<script>
+export default {
+  mounted() {
+    const slidesContainer = document.querySelector(".slides-container");
+    const slideWidth = slidesContainer.querySelector(".slideim").clientWidth;
+    const prevButton = document.querySelector(".prev2"); // Update class to .prev2
+    const nextButton = document.querySelector(".next2"); // Update class to .next2
+
+    let currentSlideIndex = 0;
+    const slides = slidesContainer.querySelectorAll(".slideim");
+
+    const changeSlide = (index) => {
+      slidesContainer.scrollLeft = index * slideWidth;
+      currentSlideIndex = index;
+    };
+
+    nextButton.addEventListener("click", () => {
+      currentSlideIndex = (currentSlideIndex + 1) % slides.length;
+      changeSlide(currentSlideIndex);
+
+      // Check if the current slide is the third from the end
+      if (currentSlideIndex === slides.length - 2) {
+        // If it is, set the current slide to the first slide
+        currentSlideIndex = 0;
+        changeSlide(currentSlideIndex);
+      }
+    });
+
+    prevButton.addEventListener("click", () => {
+      currentSlideIndex = (currentSlideIndex - 1 + slides.length) % slides.length;
+      changeSlide(currentSlideIndex);
+
+      if (currentSlideIndex === slides.length - 2) {
+        // If it is, set the current slide to the first slide
+        currentSlideIndex= currentSlideIndex-2;
+        changeSlide(currentSlideIndex);
+      }
+    });
+
+    // Autoplay
+    let autoplayInterval;
+    const startAutoplay = () => {
+      autoplayInterval = setInterval(() => {
+        currentSlideIndex = (currentSlideIndex + 1) % slides.length;
+        changeSlide(currentSlideIndex);
+
+        // Check if the current slide is the third from the end
+        if (currentSlideIndex === slides.length - 2) {
+          // If it is, set the current slide to the first slide
+          currentSlideIndex = 0;
+          changeSlide(currentSlideIndex);
+        }
+      }, 3000);
+    };
+
+    startAutoplay();
+
+    // Pause autoplay when clicking prev or next button
+    nextButton.addEventListener("click", () => {
+      clearInterval(autoplayInterval);
+      startAutoplay();
+    });
+
+    prevButton.addEventListener("click", () => {
+      clearInterval(autoplayInterval);
+      startAutoplay();
+    });
+  },
+};
+
+
+</script>
+
+<style>
+@import url("https://fonts.googleapis.com/css2?family=Inter"); html, *{
+  font-family: "Inter", sans-serif;
+}
+
+.slides-container {
+	-ms-overflow-style: none; 
+	scrollbar-width: none; 
+}
+.slides-container::-webkit-scrollbar {
+	display: none; 
+}
+
+</style>
