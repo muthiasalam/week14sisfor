@@ -5,12 +5,12 @@
     <div class="judul text-2xl mb-4 mt-8 font-semibold text-black">BERITA</div>
     <div class="berita">
       <div
-        class="berita-content -mx-4 mr-4 flex flex-wrap items-start justify-start pb-4 md:justify-center"
+        class="berita-content -mx-4 mr-4 flex flex-wrap items-start justify-start pb-4 sm:justify-center"
       >
         <div
           v-for="item in beritaTerbaru"
           :key="item.id"
-          class="mb-4 ml-4 w-full bg-slate-100 md:w-1/3 lg:w-1/5"
+          class="mb-4 ml-4 w-full bg-slate-100 sm:w-1/3 lg:w-1/5"
         >
           <a href="#" class="berita-item1 h-65 mr-10 w-64">
             <div class="relative h-40 w-full">
