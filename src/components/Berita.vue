@@ -8,15 +8,15 @@
         class="berita-content -mx-4 mr-4 flex flex-wrap items-start justify-start pb-4 md:justify-center"
       >
         <div
-          v-for="x in data.data"
-          :key="x.id"
+          v-for="item in beritaTerbaru"
+          :key="item.id"
           class="mb-4 ml-4 w-full bg-slate-100 md:w-1/3 lg:w-1/5"
         >
           <a href="#" class="berita-item1 h-65 mr-10 w-64">
             <div class="relative h-40 w-full">
               <img
                 class="h-full w-full"
-                :src="`http://localhost:8055/assets/` + x?.thumbnail"
+                :src="`http://localhost:8055/assets/` + item.thumbnail"
                 alt="News Image"
               />
               <div
@@ -25,11 +25,11 @@
             </div>
             <div class="judul-berita1 w-50 relative m-3 h-20 hover:bg-blue-100">
               <p class="line-clamp-3 text-xs font-medium text-neutral-700">
-                {{ x?.judul }}
+                {{ item.judul }}
               </p>
               <div class="absolute bottom-0 left-0">
                 <p class="text-xs font-normal text-neutral-700">
-                  {{ formatDate(x?.date_created) }}
+                  {{ formatDate(item.date_created) }}
                 </p>
               </div>
             </div>
@@ -49,15 +49,45 @@
 </template>
 
 <script setup>
-const data = await $fetch("http://localhost:8055/items/berita");
+import axios from 'axios';
+import { ref } from 'vue';
 
-console.log(data);
-// http://localhost:8055/items/berita
+const berita = ref([]);
 
-const formatDate = (date) => {
-  const options = { year: "numeric", month: "long", day: "numeric" };
-  const formattedDate = new Date(date);
-  return formattedDate.toLocaleDateString("id-ID", options);
+const fetchBerita = async () => {
+  try {
+    const response = await axios.get('http://localhost:8055/items/berita');
+    if (response.data && Array.isArray(response.data.data)) {
+      const sortedBerita = response.data.data.map(item => ({
+        ...item,
+        date_created: new Date(item.date_created)
+      }));
+      sortedBerita.sort((a, b) => b.date_created - a.date_created);
+      berita.value = sortedBerita;
+    } else {
+      console.error('Invalid response structure:', response);
+    }
+  } catch (error) {
+    console.error('Fetch error:', error);
+
+  }
 };
 
+const formatDate = (date) => {
+  const formattedDate = new Date(date);
+
+  const day = formattedDate.getDate().toString().padStart(2, '0');
+  const monthNames = [
+    'Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni',
+    'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'
+  ];
+  const month = monthNames[formattedDate.getMonth()];
+  const year = formattedDate.getFullYear();
+
+  return `${day} ${month} ${year}`;
+};
+
+fetchBerita();
+
+const beritaTerbaru = computed(() => berita.value.slice(0, 4));
 </script>
