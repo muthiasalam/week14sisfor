@@ -6,6 +6,8 @@
 
   <div class="info-content flex-col items-center justify-center ml-8 mr-8">
     <div
+      v-for="item in infoTerbaru"
+      :key="item.id"
       class="info-item1 bg-white w-128 h-24 mr-30 mb-5 drop-shadow hover:bg-slate-100"
     >
       <a href="#" class="flex">
@@ -14,15 +16,14 @@
             <div
               class="item1-date-container bg-red-700 flex flex-col justify-center items-center w-24 h-24 p-2"
             >
-              <p class="pt-3 pr-3 pl-3 text-24 font-bold text-white">23</p>
-              <p class="pb-3 pr-3 pl-3 text-11 text-white">SEP 2019</p>
+              <p class="pt-3 pr-3 pl-3 text-24 font-bold text-white">{{ item.date }}</p>
+              <p class="pb-3 pr-3 pl-3 text-11 text-white">{{ item.month + " " + item.year }}</p>
             </div>
           </div>
         </div>
         <div class="item1-right items-center justify-items-center flex">
           <p class="text-black text-10 md:text-14 pt-3 pl-3 pb-3">
-            THE 3RD EPI INTERNATIONAL CONFERENCE ON SCIENCE AND ENGINEERING
-            2019
+            {{ item.judul }}
           </p>
         </div>
         <div
@@ -48,3 +49,32 @@
   </div>
 </div>
 </template>
+<script setup>
+import axios from 'axios';
+import { ref } from 'vue';
+
+const info = ref([]);
+
+const fetchInfo = async () => {
+  try {
+    const response = await axios.get('http://localhost:8055/items/informasi');
+    if (response.data && Array.isArray(response.data.data)) {
+      const sortedInfo = response.data.data.map(item => ({
+        ...item,
+        date_created: new Date(item.date_created)
+      }));
+      sortedInfo.sort((a, b) => b.date_created - a.date_created);
+      info.value = sortedInfo;
+    } else {
+      console.error('Invalid response structure:', response);
+    }
+  } catch (error) {
+    console.error('Fetch error:', error);
+
+  }
+};
+
+fetchInfo();
+
+const infoTerbaru = computed(() => info.value.slice(0, 4));
+</script>
