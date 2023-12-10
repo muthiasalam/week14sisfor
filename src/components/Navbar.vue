@@ -116,3 +116,22 @@
     </ul>
   </div>
 </template>
+
+<script>
+export default {
+  mounted() {
+    const hamburgerIcon = document.getElementById('hamburger-icon');
+    const mobileMenu = document.getElementById('mobile-menu');
+    let isMenuOpen = false;
+
+    hamburgerIcon.addEventListener('click', () => {
+      if (isMenuOpen) {
+        mobileMenu.classList.add('hidden');
+      } else {
+        mobileMenu.classList.remove('hidden');
+      }
+      isMenuOpen = !isMenuOpen;
+    });
+  }
+}
+</script>
