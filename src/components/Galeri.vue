@@ -8,13 +8,14 @@
       <div
         class="slides-container h-40 md:h-72 flex snap-x snap-mandatory overflow-hidden overflow-x-auto space-x-2 rounded scroll-smooth"
       >
-        <div class="b relative group">
+        <div v-for="item in galeri"
+          :key="item.id" class="b relative group">
           <div
             class="slideim aspect-[4/3] h-full flex-shrink-0 snap-center rounded overflow-hidden transition-transform transform-gpu"
           >
             <img
               class="w-full h-full object-cover"
-              src="../assets/galeri/foto1.jpeg"
+              :src="`http://localhost:8055/assets/` + item.foto"
               alt="Transformasi digital manajemen persuratan(mBerkas)"
             />
           </div>
@@ -24,121 +25,7 @@
           <div
             class="absolute inset-0 flex pl-5 pr-5 items-center justify-center [text-shadow:0_1px_0_rgb(0_0_0/_100%)] text-white w-full text-xs md:text-xl font-medium opacity-0 group-hover:opacity-100"
           >
-            Transformasi digital manajemen persuratan(mBerkas)
-          </div>
-        </div>
-        <div class="b relative group">
-          <div
-            class="slideim aspect-[4/3] h-full flex-shrink-0 snap-center rounded overflow-hidden transition-transform transform-gpu"
-          >
-            <img
-              class="w-full h-full object-cover"
-              src="../assets/galeri/foto2.jpeg"
-              alt="Kesepakatan Kerja Sama"
-            />
-          </div>
-          <div
-            class="absolute inset-0 flex items-center justify-center [text-shadow:0_1px_0_rgb(0_0_0/_100%)] w-full bg-black opacity-0 group-hover:opacity-50"
-          ></div>
-          <div
-            class="absolute inset-0 flex pl-5 pr-5 items-center justify-center [text-shadow:0_1px_0_rgb(0_0_0/_100%)] text-white w-full text-xs md:text-xl font-medium opacity-0 group-hover:opacity-100"
-          >
-            Kesepakatan Kerja Sama
-          </div>
-        </div>
-        <div class="b relative group">
-          <div
-            class="slideim aspect-[4/3] h-full flex-shrink-0 snap-center rounded overflow-hidden transition-transform transform-gpu"
-          >
-            <img
-              class="w-full h-full object-cover"
-              src="../assets/galeri/foto3.jpeg"
-              alt="Pengabdian Masyarakat"
-            />
-          </div>
-          <div
-            class="absolute inset-0 flex items-center justify-center [text-shadow:0_1px_0_rgb(0_0_0/_100%)] w-full bg-black opacity-0 group-hover:opacity-50"
-          ></div>
-          <div
-            class="absolute inset-0 flex pl-5 pr-5 items-center justify-center [text-shadow:0_1px_0_rgb(0_0_0/_100%)] text-white w-full text-xs md:text-xl font-medium opacity-0 group-hover:opacity-100"
-          >
-            Pengabdian Masyarakat
-          </div>
-        </div>
-        <div class="b relative group">
-          <div
-            class="slideim aspect-[4/3] h-full flex-shrink-0 snap-center rounded overflow-hidden transition-transform transform-gpu"
-          >
-            <img
-              class="w-full h-full object-cover"
-              src="../assets/galeri/foto4.jpeg"
-              alt="Rapat Kerja Fakultas Teknik"
-            />
-          </div>
-          <div
-            class="absolute inset-0 flex items-center justify-center [text-shadow:0_1px_0_rgb(0_0_0/_100%)] w-full bg-black opacity-0 group-hover:opacity-50"
-          ></div>
-          <div
-            class="absolute inset-0 flex pl-5 pr-5 items-center justify-center [text-shadow:0_1px_0_rgb(0_0_0/_100%)] text-white w-full text-xs md:text-xl font-medium opacity-0 group-hover:opacity-100"
-          >
-            Rapat Kerja Fakultas Teknik
-          </div>
-        </div>
-        <div class="b relative group">
-          <div
-            class="slideim aspect-[4/3] h-full flex-shrink-0 snap-center rounded overflow-hidden transition-transform transform-gpu"
-          >
-            <img
-              class="w-full h-full object-cover"
-              src="../assets/galeri/foto5.jpeg"
-              alt="Pelantikan dan Pengambilan sumpah jabatan Pejabat"
-            />
-          </div>
-          <div
-            class="absolute inset-0 flex items-center justify-center [text-shadow:0_1px_0_rgb(0_0_0/_100%)] w-full bg-black opacity-0 group-hover:opacity-50"
-          ></div>
-          <div
-            class="absolute inset-0 flex pl-5 pr-5 items-center justify-center [text-shadow:0_1px_0_rgb(0_0_0/_100%)] text-white w-full text-xs md:text-xl font-medium opacity-0 group-hover:opacity-100"
-          >
-            Pelantikan dan Pengambilan sumpah jabatan Pejabat
-          </div>
-        </div>
-        <div class="b relative group">
-          <div
-            class="slideim aspect-[4/3] h-full flex-shrink-0 snap-center rounded overflow-hidden transition-transform transform-gpu"
-          >
-            <img
-              class="max-w-screen-2xl h-full object-cover"
-              src="../assets/galeri/foto6.jpeg"
-              alt="Wisuda Universitas Hasanuddin Periode IV tahap II"
-            />
-          </div>
-          <div
-            class="absolute inset-0 flex items-center justify-center [text-shadow:0_1px_0_rgb(0_0_0/_100%)] w-full bg-black opacity-0 group-hover:opacity-50"
-          ></div>
-          <div
-            class="absolute inset-0 flex pl-5 pr-5 items-center justify-center [text-shadow:0_1px_0_rgb(0_0_0/_100%)] text-white w-full text-xs md:text-xl font-medium opacity-0 group-hover:opacity-100"
-          >
-            Wisuda Universitas Hasanuddin Periode IV tahap II
-          </div>
-        </div>
-        <div class="b relative group">
-          <div
-            class="slideim aspect-[4/3] h-full flex-shrink-0 snap-center rounded overflow-hidden transition-transform transform-gpu"
-          >
-            <img
-              class="w-full h-full object-cover"
-              src="../assets/galeri/foto7.jpeg"
-              alt="Rapat Koordinasi Internal"
-            />
-          </div>
-          <div
-            class="absolute inset-0 flex items-center justify-center [text-shadow:0_1px_0_rgb(0_0_0/_100%)] w-full bg-black opacity-0 group-hover:opacity-50"
-          ></div>
-          <div
-            class="absolute inset-0 flex pl-5 pr-5 items-center justify-center [text-shadow:0_1px_0_rgb(0_0_0/_100%)] text-white w-full text-xs md:text-xl font-medium opacity-0 group-hover:opacity-100"
-          >
-            Rapat Koordinasi Internal
+          {{ item.judul }}
           </div>
         </div>
       </div>
@@ -193,74 +80,90 @@
 </template>
 
 <script>
+import axios from 'axios';
+
 export default {
-  mounted() {
-    const slidesContainer = document.querySelector(".slides-container");
-    const slideWidth = slidesContainer.querySelector(".slideim").clientWidth;
-    const prevButton = document.querySelector(".prev2"); // Update class to .prev2
-    const nextButton = document.querySelector(".next2"); // Update class to .next2
-
-    let currentSlideIndex = 0;
-    const slides = slidesContainer.querySelectorAll(".slideim");
-
-    const changeSlide = (index) => {
-      slidesContainer.scrollLeft = index * slideWidth;
-      currentSlideIndex = index;
+  async mounted() {
+    await this.fetchGaleri();
+    this.initSlides();
+    this.setupSlideNavigation();
+    this.setupAutoplay();
+  },
+  data() {
+    return {
+      galeri: [],
+      slideWidth: 0,
+      currentSlideIndex: 0,
+      autoplayInterval: null,
     };
-
-    nextButton.addEventListener("click", () => {
-      currentSlideIndex = (currentSlideIndex + 1) % slides.length;
-      changeSlide(currentSlideIndex);
-
-      // Check if the current slide is the third from the end
-      if (currentSlideIndex === slides.length - 2) {
-        // If it is, set the current slide to the first slide
-        currentSlideIndex = 0;
-        changeSlide(currentSlideIndex);
-      }
-    });
-
-    prevButton.addEventListener("click", () => {
-      currentSlideIndex = (currentSlideIndex - 1 + slides.length) % slides.length;
-      changeSlide(currentSlideIndex);
-
-      if (currentSlideIndex === slides.length - 2) {
-        // If it is, set the current slide to the first slide
-        currentSlideIndex= currentSlideIndex-2;
-        changeSlide(currentSlideIndex);
-      }
-    });
-
-    // Autoplay
-    let autoplayInterval;
-    const startAutoplay = () => {
-      autoplayInterval = setInterval(() => {
-        currentSlideIndex = (currentSlideIndex + 1) % slides.length;
-        changeSlide(currentSlideIndex);
-
-        // Check if the current slide is the third from the end
-        if (currentSlideIndex === slides.length - 2) {
-          // If it is, set the current slide to the first slide
-          currentSlideIndex = 0;
-          changeSlide(currentSlideIndex);
+  },
+  methods: {
+    async fetchGaleri() {
+      try {
+        const response = await axios.get('http://localhost:8055/items/galeri');
+        if (response.data && Array.isArray(response.data.data)) {
+          const sortedGaleri = response.data.data.map(item => ({
+            ...item,
+            date_created: new Date(item.date_created)
+          }));
+          sortedGaleri.sort((a, b) => b.date_created - a.date_created);
+          this.galeri = sortedGaleri;
+        } else {
+          console.error('Invalid response structure:', response);
         }
+      } catch (error) {
+        console.error('Fetch error:', error);
+      }
+    },
+    initSlides() {
+      this.$nextTick(() => {
+        const slidesContainer = document.querySelector(".slides-container");
+        const firstSlide = slidesContainer.querySelector(".slideim");
+        this.slideWidth = firstSlide.clientWidth;
+      });
+    },
+    setupSlideNavigation() {
+      const slidesContainer = document.querySelector(".slides-container");
+      const prevButton = document.querySelector(".prev2");
+      const nextButton = document.querySelector(".next2");
+      const slides = slidesContainer.querySelectorAll(".slideim");
+
+      nextButton.addEventListener("click", () => {
+        this.nextSlide(slides);
+      });
+
+      prevButton.addEventListener("click", () => {
+        this.prevSlide(slides);
+      });
+    },
+    nextSlide(slides) {
+      this.currentSlideIndex = (this.currentSlideIndex + 1) % slides.length;
+      this.changeSlide(this.currentSlideIndex);
+    },
+    prevSlide(slides) {
+      this.currentSlideIndex = (this.currentSlideIndex - 1 + slides.length) % slides.length;
+      this.changeSlide(this.currentSlideIndex);
+    },
+    changeSlide(index) {
+      const slidesContainer = document.querySelector(".slides-container");
+      slidesContainer.scrollLeft = index * this.slideWidth;
+    },
+    setupAutoplay() {
+      this.autoplayInterval = setInterval(() => {
+        const slides = document.querySelectorAll(".slideim");
+        this.nextSlide(slides);
       }, 3000);
-    };
-
-    startAutoplay();
-
-    // Pause autoplay when clicking prev or next button
-    nextButton.addEventListener("click", () => {
-      clearInterval(autoplayInterval);
-      startAutoplay();
-    });
-
-    prevButton.addEventListener("click", () => {
-      clearInterval(autoplayInterval);
-      startAutoplay();
-    });
+    },
+    stopAutoplay() {
+      clearInterval(this.autoplayInterval);
+    },
+    restartAutoplay() {
+      this.stopAutoplay();
+      this.setupAutoplay();
+    },
   },
 };
+
 
 
 </script>
