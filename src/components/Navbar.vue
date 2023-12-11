@@ -9,10 +9,10 @@
           <a href="#" class="hover:text-red-500 text-white">PROFIL</a>
           <div class="submenu hidden absolute bg-merahdesain z-20 mt-4 py-2 px-4 text-white shadow-lg">
             <a href="#" class="py-2 block hover:text-red-500">BERITA</a>
-            <a href="#" class="py-2 block hover:text-red-500">SEJARAH SINGKAT</a>
-            <a href="#" class="py-2 block hover:text-red-500">VISI MISI DAN SASARAN</a>
+            <a href="/profil/sejarahSingkat" class="py-2 block hover:text-red-500">SEJARAH SINGKAT</a>
+            <a href="/profil/visiMisiSasaran" class="py-2 block hover:text-red-500">VISI MISI DAN SASARAN</a>
             <a href="#" class="py-2 block hover:text-red-500">MANAJEMEN</a>
-            <a href="#" class="py-2 block hover:text-red-500">STRUKTUR ORGANISASI</a>
+            <a href="/profil/strukturOrganisasi" class="py-2 block hover:text-red-500">STRUKTUR ORGANISASI</a>
             <a href="#" class="py-2 block hover:text-red-500">MASTER PLAN</a>
             <a href="#" class="py-2 block hover:text-red-500">PETA KAMPUS</a>
             <a href="#" class="py-2 block hover:text-red-500">MEDIATEK</a>
@@ -23,7 +23,7 @@
         <div class=" hidden xl:flex">
           <a href="#" class="hover:text-red-500 text-white">AKADEMIK</a>
           <div class="submenu hidden absolute bg-merahdesain z-20 mt-4 py-2 px-4 text-white shadow-lg">
-            <a href="#" class="py-2 block hover:text-red-500">DEPARTEMEN</a>
+            <a href="/akademik/akreditasi" class="py-2 block hover:text-red-500">DEPARTEMEN</a>
             <a href="#" class="py-2 block hover:text-red-500">PROGRAM MAGISTER</a>
             <a href="#" class="py-2 block hover:text-red-500">PROGRAM DOKTOR</a>
             <a href="#" class="py-2 block hover:text-red-500">MANAJEMEN</a>
