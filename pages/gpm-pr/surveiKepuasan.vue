@@ -14,7 +14,12 @@
 
     <div class="survey-instrument">
       <h2>Instrumen Survey</h2>
-      <p>Pengukuran kepuasan mahasiswa terhadap layanan dan pelaksanaan proses pendidikan mencakup aspek:</p>
+      <p>Pengukuran kepuasan mahasiswa terhadap layanan dan pelaksanaan proses pendidikan mencakup aspek:
+        *Keandalan (reliability): kemampuan dosen, tenaga kependidikan, dan pengelola dalam memberikan pelayanan.
+Daya tanggap (responsiveness): kemauan dari dosen, tenaga kependidikan, dan pengelola dalam membantu mahasiswa dan memberikan jasa dengan cepat.
+Kepastian (assurance): kemampuan dosen, tenaga kependidikan, dan pengelola untuk memberi keyakinan kepada mahasiswa bahwa pelayanan yang diberikan telah sesuai dengan ketentuan.
+Empati (empathy): kesediaan/kepedulian dosen, tenaga kependidikan, dan pengelola untuk memberi perhatian kepada mahasiswa.
+Tangible: penilaian mahasiswa terhadap kecukupan, aksesibilitas, kualitas sarana dan prasarana.</p>
       
       <!-- Insert other content as needed -->
 
@@ -68,4 +73,3 @@ export default {
 
 /* Add styles for other elements as needed */
 </style>
-
