@@ -16,14 +16,14 @@
             <div
               class="item1-date-container bg-red-700 flex flex-col justify-center items-center w-24 h-24 p-2"
             >
-              <p class="pt-3 pr-3 pl-3 text-24 font-bold text-white">{{ item. Date }}</p>
-              <p class="pb-3 pr-3 pl-3 text-11 text-white">{{ item.Month + " " + item.Year }}</p>
+              <p class="pt-3 pr-3 pl-3 text-24 font-bold text-white">{{ item.date }}</p>
+              <p class="pb-3 pr-3 pl-3 text-11 text-white">{{ item.month + " " + item.year }}</p>
             </div>
           </div>
         </div>
         <div class="item1-right items-center justify-items-center flex">
           <p class="text-black text-10 md:text-14 pt-3 pl-3 pb-3">
-            {{ item.Judul }}
+            {{ item.judul }}
           </p>
         </div>
         <div
@@ -57,7 +57,7 @@ const info = ref([]);
 
 const fetchInfo = async () => {
   try {
-    const response = await axios.get('http://localhost:8055/items/Informasi');
+    const response = await axios.get('http://localhost:8055/items/informasi');
     if (response.data && Array.isArray(response.data.data)) {
       const sortedInfo = response.data.data.map(item => ({
         ...item,

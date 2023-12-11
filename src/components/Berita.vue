@@ -56,7 +56,7 @@ const berita = ref([]);
 
 const fetchBerita = async () => {
   try {
-    const response = await axios.get('http://localhost:8055/items/Berita');
+    const response = await axios.get('http://localhost:8055/items/berita');
     if (response.data && Array.isArray(response.data.data)) {
       const sortedBerita = response.data.data.map(item => ({
         ...item,

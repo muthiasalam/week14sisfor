@@ -15,7 +15,7 @@
           >
             <img
               class="w-full h-full object-cover"
-              :src="`http://localhost:8055/assets/` + item.Thumbnail"
+              :src="`http://localhost:8055/assets/` + item.foto"
               alt="Transformasi digital manajemen persuratan(mBerkas)"
             />
           </div>
@@ -25,7 +25,7 @@
           <div
             class="absolute inset-0 flex pl-5 pr-5 items-center justify-center [text-shadow:0_1px_0_rgb(0_0_0/_100%)] text-white w-full text-xs md:text-xl font-medium opacity-0 group-hover:opacity-100"
           >
-          {{ item.Judul }}
+          {{ item.judul }}
           </div>
         </div>
       </div>
@@ -100,7 +100,7 @@ export default {
   methods: {
     async fetchGaleri() {
       try {
-        const response = await axios.get('http://localhost:8055/items/Galeri');
+        const response = await axios.get('http://localhost:8055/items/galeri');
         if (response.data && Array.isArray(response.data.data)) {
           const sortedGaleri = response.data.data.map(item => ({
             ...item,
