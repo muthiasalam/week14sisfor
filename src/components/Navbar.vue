@@ -3,7 +3,7 @@
     <nav class="nav-bar">
       <ul class="list-none text-xs flex justify-center items-center space-x-5 p-2">
         <div class="hidden xl:flex">
-          <a href="#" class="hover:text-red-500 text-white">BERANDA</a>
+          <router-link to="/" class="hover:text-red-500 text-white">BERANDA</router-link>
         </div>
         <div class="hidden xl:flex">
           <a href="#" class="hover:text-red-500 text-white">PROFIL</a>

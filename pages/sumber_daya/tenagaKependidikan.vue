@@ -4,9 +4,9 @@
       <Navbar />
   
       <div class="flex flex-col items-center mb-10 mt-10">
-        <div v-if="programs && programs.data" class="my-10">
+        <div v-if="programs && programs.data" class="my-10 flex flex-col items-center">
           <!-- Second Table -->
-          <table class="mb-10">
+          <table class="mb-10 ">
             <thead>
               <tr>
                 <th>Nama</th>
@@ -59,7 +59,7 @@
   /* Add your styles here */
   table {
     border-collapse: collapse;
-    width: 100%;
+    width: 90%;
   }
   
   td, th {

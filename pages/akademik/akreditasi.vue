@@ -3,10 +3,10 @@
       <Headerr />
       <Navbar />
   
-      <div class="flex flex-col items-center mb-10 mt-10">
-        <div v-if="identitas" class="my-10">
+      <div class="flex flex-col items-center mb-10 mt-10 ">
+        <div v-if="identitas" class="flex flex-col my-10 items-center">
           <!-- First Table -->
-          <table class="mb-10">
+          <table class="mb-10 ">
             <tbody>
               <tr v-for="(item, index) in items.Column1" :key="index">
                 <td>{{ item.Column }}</td>
@@ -16,7 +16,7 @@
           </table>
   
           <!-- Second Table -->
-          <table class="mb-10">
+          <table class="mb-10 ">
             <thead>
               <tr>
                 <th>Jenis Program</th>
@@ -100,7 +100,7 @@
   /* Add your styles here */
   table {
     border-collapse: collapse;
-    width: 100%;
+    width: 80%;
   }
   
   td, th {

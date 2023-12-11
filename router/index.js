@@ -23,10 +23,16 @@ import Mediatek from '@/pages/profil/mediatek.vue';
 import Manajemen from '@/pages/profil/manajemen.vue';
 
 
+
 Vue.use(Router);
 
 export default new Router({
   routes: [
+    {
+      path: '/',
+      name: 'Beranda',  // Nama rute beranda
+      component: () => import('@/pages/index.vue'),  // Komponen index.vue
+    },
     {
       path: '/akademik/akreditasi',
       name: 'Akreditasi',
@@ -112,6 +118,7 @@ export default new Router({
         name: 'Manajemen',
         component: Manajemen,
       },
+      
     // ... rute lainnya ...
   ],
 });
