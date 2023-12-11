@@ -20,6 +20,7 @@
   },
   "dependencies": {
     "axios": "^1.6.2",
-    "nuxt-directus": "^5.6.0"
+    "nuxt-directus": "^5.6.0",
+    "vue-pdf": "^4.3.0"
   }
 }

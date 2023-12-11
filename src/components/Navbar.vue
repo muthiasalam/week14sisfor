@@ -8,14 +8,13 @@
         <div class="hidden xl:flex">
           <a href="#" class="hover:text-red-500 text-white">PROFIL</a>
           <div class="submenu hidden absolute bg-merahdesain z-20 mt-4 py-2 px-4 text-white shadow-lg">
-            <a href="#" class="py-2 block hover:text-red-500">BERITA</a>
             <a href="/profil/sejarahSingkat" class="py-2 block hover:text-red-500">SEJARAH SINGKAT</a>
             <a href="/profil/visiMisiSasaran" class="py-2 block hover:text-red-500">VISI MISI DAN SASARAN</a>
-            <a href="#" class="py-2 block hover:text-red-500">MANAJEMEN</a>
+            <a href="/profil/manajemen" class="py-2 block hover:text-red-500">MANAJEMEN</a>
             <a href="/profil/strukturOrganisasi" class="py-2 block hover:text-red-500">STRUKTUR ORGANISASI</a>
-            <a href="#" class="py-2 block hover:text-red-500">MASTER PLAN</a>
-            <a href="#" class="py-2 block hover:text-red-500">PETA KAMPUS</a>
-            <a href="#" class="py-2 block hover:text-red-500">MEDIATEK</a>
+            <a href="/profil/masterPlan" class="py-2 block hover:text-red-500">MASTER PLAN</a>
+            <a href="/profil/petaKampus" class="py-2 block hover:text-red-500">PETA KAMPUS</a>
+            <a href="/profil/mediatek" class="py-2 block hover:text-red-500">MEDIATEK</a>
           </div>
           <img loading="lazy" src="../assets/footer/dropdown.png"
             class="aspect-square object-cover object-center w-4 overflow-hidden self-center shrink-0 my-auto" />
@@ -23,13 +22,12 @@
         <div class=" hidden xl:flex">
           <a href="#" class="hover:text-red-500 text-white">AKADEMIK</a>
           <div class="submenu hidden absolute bg-merahdesain z-20 mt-4 py-2 px-4 text-white shadow-lg">
-            <a href="/akademik/akreditasi" class="py-2 block hover:text-red-500">DEPARTEMEN</a>
-            <a href="#" class="py-2 block hover:text-red-500">PROGRAM MAGISTER</a>
-            <a href="#" class="py-2 block hover:text-red-500">PROGRAM DOKTOR</a>
-            <a href="#" class="py-2 block hover:text-red-500">MANAJEMEN</a>
-            <a href="#" class="py-2 block hover:text-red-500">PROGRAM PROFESI</a>
-            <a href="#" class="py-2 block hover:text-red-500">AKREDITASI</a>
-            <a href="#" class="py-2 block hover:text-red-500">KALENDER AKADEMIK</a>
+            <a href="/akademik/departemen" class="py-2 block hover:text-red-500">DEPARTEMEN</a>
+            <a href="/akademik/magister" class="py-2 block hover:text-red-500">PROGRAM MAGISTER</a>
+            <a href="/akademik/doktor" class="py-2 block hover:text-red-500">PROGRAM DOKTOR</a>
+            <a href="/akademik/profesi" class="py-2 block hover:text-red-500">PROGRAM PROFESI</a>
+            <a href="/akademik/akreditasi" class="py-2 block hover:text-red-500">AKREDITASI</a>
+            <a href="/akademik/kalendarAkademik" class="py-2 block hover:text-red-500">KALENDER AKADEMIK</a>
           </div>
           <img loading="lazy" src="../assets/footer/dropdown.png"
             class="aspect-square object-cover object-center w-4 overflow-hidden self-center shrink-0 my-auto" />
@@ -37,10 +35,10 @@
         <div class=" hidden xl:flex">
           <a href="#" class="hover:text-red-500 text-white">SUMBER DAYA</a>
           <div class="submenu hidden absolute bg-merahdesain z-20 mt-4 py-2 px-4 text-white shadow-lg">
-            <a href="#" class="py-2 block hover:text-red-500">GURU BESAR</a>
-            <a href="#" class="py-2 block hover:text-red-500">TENAGA KEPENDIDIKAN</a>
-            <a href="#" class="py-2 block hover:text-red-500">SARANA DAN PRASARANA</a>
-            <a href="#" class="py-2 block hover:text-red-500">PERPUSTAKAAN</a>
+            <a href="/sumber_daya/guru_besar" class="py-2 block hover:text-red-500">GURU BESAR</a>
+            <a href="/sumber_daya/tenagaKependidikan" class="py-2 block hover:text-red-500">TENAGA KEPENDIDIKAN</a>
+            <a href="/sumber_daya/saranaPrasarana" class="py-2 block hover:text-red-500">SARANA DAN PRASARANA</a>
+            <a href="/sumber_daya/perpustakaan" class="py-2 block hover:text-red-500">PERPUSTAKAAN</a>
           </div>
           <img loading="lazy" src="../assets/footer/dropdown.png"
             class="aspect-square object-cover object-center w-4 overflow-hidden self-center shrink-0 my-auto" />

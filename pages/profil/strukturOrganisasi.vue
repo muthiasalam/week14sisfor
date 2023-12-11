@@ -25,7 +25,7 @@
       const data = await response.json();
       
       // Assuming there's only one item in the response data array
-      const item = data.data[0];
+      const item = data.data[2];
   
       const foto1Id = item.Foto1;
       const foto1Url = `http://localhost:8055/assets/${foto1Id}`;
@@ -34,8 +34,7 @@
       // Extracting "Heading" and "Konten" values
       heading.value = item.Heading[0]?.Heading || '';
   
-      // Replace ".." with a line break (<br>)
-      konten.value = item.Konten[0]?.Konten.replace(/\.\./g, '.<br><br>') || '';
+      
     } catch (error) {
       console.error('Error fetching data:', error);
     }
@@ -43,7 +42,7 @@
   
   // Use a computed property to safely bind HTML
   import { computed } from 'vue';
-  const formattedKonten = computed(() => konten.value);
+  
   </script>
   
   <style lang="css" scoped>
