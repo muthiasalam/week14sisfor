@@ -50,7 +50,6 @@ onMounted(async () => {
 <style>
 .listorder {
     list-style: auto;
-    margin-left: 30px;
     margin-top: 10px;
 }
 </style>
