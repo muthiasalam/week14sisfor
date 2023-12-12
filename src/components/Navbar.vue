@@ -46,7 +46,7 @@
         <div class=" hidden xl:flex">
           <a href="#" class="hover:text-red-500 text-white">K3</a>
           <div class="submenu hidden absolute bg-merahdesain z-20 mt-4 py-2 px-4 text-white shadow-lg">
-            <a href="#" class="py-2 block hover:text-red-500">PROFIL K3</a>
+            <a href="/k3/profile" class="py-2 block hover:text-red-500">PROFIL K3</a>
             <a href="#" class="py-2 block hover:text-red-500">STRUKTUR ORGANISASI</a>
             <a href="#" class="py-2 block hover:text-red-500">VISI MISI DAN SASARAN</a>
             <a href="#" class="py-2 block hover:text-red-500">TENTANG K3 FT-UH</a>
@@ -72,9 +72,9 @@
         <div class=" hidden xl:flex">
           <a href="#" class="hover:text-red-500 text-white">RISET DAN INOVASI</a>
           <div class="submenu hidden absolute bg-merahdesain z-20 mt-4 py-2 px-4 text-white shadow-lg">
-            <a href="#" class="py-2 block hover:text-red-500">DAFTAR PENELITIAN TERDAHULU</a>
-            <a href="#" class="py-2 block hover:text-red-500">HASIL INOVASI</a>
-            <a href="#" class="py-2 block hover:text-red-500">HAK KEKAYAAN INTELEKTUAL</a>
+            <a href="/riset_dan_inovasi/penelitian" class="py-2 block hover:text-red-500">DAFTAR PENELITIAN TERDAHULU</a>
+            <a href="/riset_dan_inovasi/inovasi" class="py-2 block hover:text-red-500">HASIL INOVASI</a>
+            <a href="/riset_dan_inovasi/haki" class="py-2 block hover:text-red-500">HAK KEKAYAAN INTELEKTUAL</a>
           </div>
           <img loading="lazy" src="../assets/footer/dropdown.png"
             class="aspect-square object-cover object-center w-4 overflow-hidden self-center shrink-0 my-auto" />
@@ -82,8 +82,8 @@
         <div class=" hidden xl:flex">
           <a href="#" class="hover:text-red-500 text-white">KEMITRAAN</a>
           <div class="submenu hidden absolute bg-merahdesain z-20 mt-4 py-2 px-4 text-white shadow-lg">
-            <a href="#" class="py-2 block hover:text-red-500">KERJASAMA DALAM NEGERI</a>
-            <a href="#" class="py-2 block hover:text-red-500">KERJASAMA LUAR NEGERI</a>
+            <a href="/kemitraan/dalamNegeri" class="py-2 block hover:text-red-500">KERJASAMA DALAM NEGERI</a>
+            <a href="/kemitraan/luarNegeri" class="py-2 block hover:text-red-500">KERJASAMA LUAR NEGERI</a>
           </div>
           <img loading="lazy" src="../assets/footer/dropdown.png"
             class="aspect-square object-cover object-center w-4 overflow-hidden self-center shrink-0 my-auto" />

@@ -9,7 +9,7 @@
           <table class="mb-10 ">
             <tbody>
               <tr v-for="(item, index) in items.Column1" :key="index">
-                <td>{{ item.Column }}</td>
+                <td class="spesial font-bold">{{ item.Column }}</td>
                 <td>{{ getColumn2Value(item.Column) }}</td>
               </tr>
             </tbody>
@@ -100,14 +100,42 @@
   /* Add your styles here */
   table {
     border-collapse: collapse;
-    width: 80%;
+    width: 90%;
+    font-size: 13px;
+   
+  }
+
+  th,td{
+    text-align: left;
+    padding: 8px 18px;
+
   }
   
-  td, th {
-    border: 1px solid black;
-    padding: 8px;
-    text-align: left;
+  
+  th {
+    border-bottom: 2px solid rgb(152, 152, 152);
+    
   }
+
+  .spesial, td{
+    border-top: 1px solid rgb(152, 152, 152);
+  }
+
+  .spesial, th{
+    background-color: #efefef;
+
+  }
+
+  td {
+    border-bottom: 1px solid rgb(152, 152, 152);
+    
+  }
+
+  .spesial{
+    border-right: 1px solid rgb(152, 152, 152);
+  }
+
+ 
   
   /* Optional: Add more spacing between columns */
   td:not(:last-child),

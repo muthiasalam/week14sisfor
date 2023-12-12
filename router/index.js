@@ -22,6 +22,14 @@ import PetaKampus from '@/pages/profil/petaKampus.vue';
 import Mediatek from '@/pages/profil/mediatek.vue';
 import Manajemen from '@/pages/profil/manajemen.vue';
 
+import K3 from '@/pages/k3/profile.vue';
+
+import LuarNegeri from '@/pages/kemitraan/luarNegeri.vue'
+import DalamNegeri from '@/pages/kemitraan/dalamNegeri.vue'
+import Haki from '@/pages/riset_dan_inovasi/haki.vue'
+import Inovasi from '@/pages/riset_dan_inovasi/inovasi.vue'
+import Penelitian from '@/pages/riset_dan_inovasi/penelitian.vue'
+
 
 
 Vue.use(Router);
@@ -117,6 +125,36 @@ export default new Router({
         path: '/profil/manajemen',
         name: 'Manajemen',
         component: Manajemen,
+      },
+      {
+        path: '/k3/profile',
+        name: 'K3',
+        component: K3,
+      },
+      {
+        path: '/kemitraan/luarNegeri',
+        name: 'LuarNegeri',
+        component: LuarNegeri,
+      },
+      {
+        path: '/kemitraan/dalamNegeri',
+        name: 'DalamNegeri',
+        component: DalamNegeri,
+      },
+      {
+        path: '/riset_dan_inovasi/haki',
+        name: 'Haki',
+        component: Haki,
+      },
+      {
+        path: '/riset_dan_inovasi/inovasi',
+        name: 'Inovasi',
+        component: Inovasi,
+      },
+      {
+        path: '/riset_dan_inovasi/penelitian',
+        name: 'Penelitian',
+        component: Penelitian,
       },
       
     // ... rute lainnya ...
