@@ -6,7 +6,7 @@
             <div>
                 <h3 class="text-2xl font-bold ml-10 mr-10 mb-7">{{ heading }}</h3>
                 <p class="text-gray-600 ml-10 mr-10 mb-15" v-html="konten"></p>
-                <img :src="`http://localhost:8055/assets/09ac7c7e-4beb-4999-bbb0-9b8b53212520`" alt="Foto1" class="w-1/2 mb-4 ml-10 mr-10 mb-15">
+                <img :src="`http://localhost:8055/assets/09ac7c7e-4beb-4999-bbb0-9b8b53212520`" alt="Foto3" class="w-1/2 mb-4 ml-10 mr-10 mb-15">
             </div>
         </div>
         <Footerr />

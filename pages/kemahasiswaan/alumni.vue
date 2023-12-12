@@ -6,7 +6,7 @@
             <div>
                 <h3 class="text-2xl font-bold ml-10 mr-10 mb-7">{{ heading }}</h3>
                 <p class="text-gray-600 ml-10 mr-10 mb-15" v-html="konten"></p>
-                <img :src="`http://localhost:8055/assets/67296f8c-1876-4424-801e-6564db1224ec`" alt="Foto1"
+                <img :src="`http://localhost:8055/assets/67296f8c-1876-4424-801e-6564db1224ec`" alt="Foto5"
                     class="w-1/2 mb-4 ml-10 mr-10 mb-15">
                 <a href="https://ikateknikunhas.org/" class="link  ml-10 mr-10 mb-15">Engineering Faculty Alumni Association</a>
             </div>
