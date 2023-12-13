@@ -15,21 +15,21 @@
         <div class="ml-10 mr-10 mb-5">
             <h3 class="font-bold mb-5">{{ heading2 }}</h3>
             <div class="flex flex-col md:flex-row">
-                <img :src='`http://localhost:8055/assets/54e87624-da3d-4aca-a739-2706d6ae4a17`' class="w-1/8 h-1/8 mr-10">
+                <img :src='`http://localhost:8055/assets/364a71de-7e5e-4323-8086-eccc44e06381`' class="w-1/8 h-1/8 mr-10">
                 <p v-html="formatHTML(konten2)"></p>
             </div>
         </div>
         <div class="ml-10 mr-10 mb-5">
             <h3 class="font-bold mb-5">{{ heading3 }}</h3>
             <div class="flex flex-col md:flex-row">
-                <img :src='`http://localhost:8055/assets/54e87624-da3d-4aca-a739-2706d6ae4a17`' class="w-1/8 h-1/8 mr-10">
+                <img :src='`http://localhost:8055/assets/d4afff9b-00a6-48e3-b73b-be54bae2305f`' class="w-1/8 h-1/8 mr-10">
                 <p v-html="formatHTML(konten3)"></p>
             </div>
         </div>
         <div class="ml-10 mr-10 mb-5">
             <h3 class="font-bold mb-5">{{ heading4 }}</h3>
             <div class="flex flex-col md:flex-row">
-                <img :src='`http://localhost:8055/assets/54e87624-da3d-4aca-a739-2706d6ae4a17`' class="w-1/8 h-1/8 mr-10">
+                <img :src='`http://localhost:8055/assets/0b415920-9726-4e73-b47e-2cd2ebd2b416`' class="w-1/8 h-1/8 mr-10">
                 <p v-html="formatHTML(konten4)"></p>
             </div>
         </div>
@@ -44,7 +44,7 @@
             </div>
             <p v-html="formatHTML(konten5)"></p>
             <div class="flex flex-col items-center mb-10">
-                <img :src='`http://localhost:8055/assets/4301164d-ee7c-492b-b925-2671444b7c11`' class="w-4/5">
+                <img :src='`http://localhost:8055/assets/01fd77d3-8cb7-455b-9a8a-1ccc5266ffd4`' class="w-4/5">
                 <p class="text-12 italic">Gambar 2 Peningkatan mutu yang berkelanjutan (Kaizen)</p>
             </div>
         </div>
