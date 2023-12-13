@@ -4,6 +4,7 @@
       <Navbar />
   
       <div class="flex flex-col items-center mb-10 mt-10">
+          <p>Daftar produk dan hasil inovasi yang telah dihasilkan oleh Fakultas Teknik, Universitas Hasanuddin antara lain:</p>
         <div v-if="programs && programs.data" class="my-10 flex flex-col items-center">
           <!-- Second Table -->
           <table class="mb-10">
