@@ -4,6 +4,15 @@
       <Navbar />
   
       <div class="flex flex-col items-center mb-10 mt-10">
+     <p class="text-center mb-4"> 
+      Kerjasama Internasional Fakultas Teknik sudah diinisiasi sejak awal terbentuknya dan seiring dengan berkembangnya fakultas ini telah terbangun kerjasama Internsional yang cukup baik dengan berbagai stakeholders di tingkat antar negara baik itu institusi riset maupun dengan universitas secara umum. Di bawah ini daftar Memorandum of Understanding (MoU) dan Memorandum of Agreement yang telah ditandatangani minimal 5 tahun terakhir.
+    </p>
+
+    <!-- Judul -->
+    <h2 class="text-xl font-bold mb-4 text-center"> 
+      DAFTAR KERJASAMA UNHAS, FAKULTAS TEKNIK DENGAN UNIVERSITAS LUAR NEGERI
+    </h2>
+
         <div v-if="programs && programs.data" class="my-10 flex flex-col items-center">
   
           <table class="mb-10">
