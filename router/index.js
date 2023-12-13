@@ -28,6 +28,20 @@ import Jurnal from '@/pages/cot/jurnal.vue';
 import Newsletter from '@/pages/cot/newsletter.vue';
 import UIGcolab from '@/pages/cot/uigcolab.vue';
 
+//dharmawanita
+import HalamanUtama from '@/pages/dharma_wanita/halamanUtama.vue';
+import strukturOrganisasiDharma from '@/pages/dharma_wanita/strukturOrganisasi.vue';
+
+//gpm-pr
+import ProfilGPMPR from '@/pages/gpm-pr/profil.vue';
+import DokumenMutu from '@/pages/gpm-pr/dokumenMutu.vue';
+import AuditMutu from '@/pages/gpm-pr/auditMutu.vue';
+import LAMteknik from '@/pages/gpm-pr/lamTeknik.vue';
+import LaporanKepuasan from '@/pages/gpm-pr/laporanKepuasan.vue';
+import SurveiKepuasan from '@/pages/gpm-pr/surveiKepuasan.vue';
+import GaleriGPMPR from '@/pages/gpm-pr/galeri.vue';
+
+
 Vue.use(Router);
 
 export default new Router({
@@ -112,6 +126,41 @@ export default new Router({
       name: 'Pengumuman',
       component: Pengumuman,
     },
+    { 
+      path: '/gpm-pr/profil',
+      name: 'ProfilGPMPR',
+      component: ProfilGPMPR,
+    },
+    { 
+      path: '/gpm-pr/dokumenMutu',
+      name: 'DokumenMutu',
+      component: DokumenMutu,
+    },
+    { 
+      path: '/gpm-pr/auditMutu',
+      name: 'AuditMutu',
+      component: AuditMutu,
+    },
+    { 
+      path: '/gpm-pr/lamTeknik',
+      name: 'LAMteknik',
+      component: LAMteknik,
+    },
+    { 
+      path: '/gpm-pr/laporanKepuasan',
+      name: 'LaporanKepuasan',
+      component: LaporanKepuasan,
+    },
+    { 
+      path: '/gpm-pr/surveiKepuasan',
+      name: 'SurveiKepuasan',
+      component: SurveiKepuasan,
+    },
+    { 
+      path: '/gpm-pr/galeri',
+      name: 'GaleriGPMPR',
+      component: GaleriGPMPR,
+    },
     { //cot
       path: '/cot/website',
       name: 'Website',
@@ -131,6 +180,16 @@ export default new Router({
       path: '/cot/uigcolab',
       name: 'UIGcolab',
       component: UIGcolab,
+    },
+    { //dharma
+      path: '/dharma_wanita/halamanUtama',
+      name: 'HalamanUtama',
+      component: HalamanUtama,
+    },
+    {
+      path: '/dharma_wanita/strukturOrganisasi',
+      name: 'strukturOrganisasiDharma',
+      component: strukturOrganisasiDharma,
     },
 
     // ... rute lainnya ...

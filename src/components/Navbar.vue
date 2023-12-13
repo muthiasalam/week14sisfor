@@ -93,13 +93,13 @@
         <div class=" hidden xl:flex">
           <a href="#" class="hover:text-red-500 text-white">GPM-PR</a>
           <div class="submenu hidden absolute bg-merahdesain z-20 mt-4 py-2 px-4 text-white shadow-lg">
-            <a href="#" class="py-2 block hover:text-red-500">PROFIL GPM-PR</a>
-            <a href="#" class="py-2 block hover:text-red-500">DOKUMEN MUTU</a>
-            <a href="#" class="py-2 block hover:text-red-500">AUDIT MUTU AKADEMIK INTERNAL</a>
-            <a href="#" class="py-2 block hover:text-red-500">LAM TEKNIK</a>
-            <a href="#" class="py-2 block hover:text-red-500">LAPORAN KEPUASAN PENGGUNA</a>
-            <a href="#" class="py-2 block hover:text-red-500">SURVEI KEPUASAN LAYANAN MAHASISWA</a>
-            <a href="#" class="py-2 block hover:text-red-500">GALERI</a>
+            <a href="/gpm-pr/profil" class="py-2 block hover:text-red-500">PROFIL GPM-PR</a>
+            <a href="/gpm-pr/dokumenMutu" class="py-2 block hover:text-red-500">DOKUMEN MUTU</a>
+            <a href="/gpm-pr/auditMutu" class="py-2 block hover:text-red-500">AUDIT MUTU AKADEMIK INTERNAL</a>
+            <a href="/gpm-pr/lamTeknik" class="py-2 block hover:text-red-500">LAM TEKNIK</a>
+            <a href="/gpm-pr/laporanKepuasan" class="py-2 block hover:text-red-500">LAPORAN KEPUASAN PENGGUNA</a>
+            <a href="/gpm-pr/surveiKepuasan" class="py-2 block hover:text-red-500">SURVEI KEPUASAN LAYANAN MAHASISWA</a>
+            <a href="/gpm-pr/galeri" class="py-2 block hover:text-red-500">GALERI</a>
           </div>
           <img loading="lazy" src="../assets/footer/dropdown.png"
             class="aspect-square object-cover object-center w-4 overflow-hidden self-center shrink-0 my-auto" />
@@ -118,8 +118,8 @@
         <div class="hidden xl:flex">
           <a href="#" class="hover:text-red-500 text-white">DHARMA WANITA</a>
           <div class="submenu hidden absolute bg-merahdesain z-20 mt-4 py-2 px-4 text-white shadow-lg">
-            <a href="#" class="py-2 block hover:text-red-500">HALAMAN UTAMA DHARMA WANITA</a>
-            <a href="#" class="py-2 block hover:text-red-500">STRUKTUR ORGANISASI DHARMAWANITA</a>
+            <a href="/dharma_wanita/halamanUtama" class="py-2 block hover:text-red-500">HALAMAN UTAMA DHARMA WANITA</a>
+            <a href="/dharma_wanita/strukturOrganisasi" class="py-2 block hover:text-red-500">STRUKTUR ORGANISASI DHARMAWANITA</a>
           </div>
           <img loading="lazy" src="../assets/footer/dropdown.png"
             class="aspect-square object-cover object-center w-4 overflow-hidden self-center shrink-0 my-auto" />
