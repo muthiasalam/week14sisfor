@@ -5,7 +5,7 @@
         <div class="ml-10 mr-10 mb-5 mt-10">
             <p class="font-bold mb-5" v-html="formatHTML(konten0)"></p>
             <div class="flex flex-col items-center mb-10">
-                <img :src='`http://localhost:8055/assets/838314c7-ab10-482b-b4ec-cf9379a12d46`' class="w-4/5">
+                <img :src='`http://localhost:8055/assets/40fbbc61-b412-46b7-95d2-2159c9d452d1`' class="w-4/5">
                 <img :src='`http://localhost:8055/assets/7cb689c3-d1de-4df0-82bf-dd7c6bfc8fba`' class="w-4/5">
                 <img :src='`http://localhost:8055/assets/2334d7cf-4386-4143-98fa-d5fb9232744f`' class="w-4/5">
             </div>
