@@ -4,6 +4,7 @@
       <Navbar />
   
       <div class="flex flex-col items-center mb-10 mt-10">
+        <h2 class="text-2xl font-bold ml-10 mr-10 mb-10">Kemitraan Luar Negeri</h2>
      <p class="text-center mb-4"> 
       Kerjasama Internasional Fakultas Teknik sudah diinisiasi sejak awal terbentuknya dan seiring dengan berkembangnya fakultas ini telah terbangun kerjasama Internsional yang cukup baik dengan berbagai stakeholders di tingkat antar negara baik itu institusi riset maupun dengan universitas secara umum. Di bawah ini daftar Memorandum of Understanding (MoU) dan Memorandum of Agreement yang telah ditandatangani minimal 5 tahun terakhir.
     </p>

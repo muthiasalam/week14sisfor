@@ -5,6 +5,7 @@
   
     
       <div class="flex flex-col items-center mb-10 mt-10 space-y-18">
+        <h2 class="text-2xl font-bold ml-10 mr-10 mb-10">Hak Cipta</h2>
         <div v-if="programs && programs.data" class="my-10">
             <h3 class="font-bold mb-4">Paten</h3>
           <table class="mb-10 ">

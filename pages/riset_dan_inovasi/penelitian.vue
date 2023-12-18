@@ -4,6 +4,7 @@
       <Navbar />
   
       <div class="flex flex-col items-center mb-10 mt-10">
+        <h2 class="text-2xl font-bold ml-10 mr-10 mb-10">Penelitian</h2>
           <p>
       Berikut adalah nama tim dan judul penelitian yang mendapatkan dana penelitian melalui skema Labo-Based Education (LBE) Tahun 2022:
     </p>

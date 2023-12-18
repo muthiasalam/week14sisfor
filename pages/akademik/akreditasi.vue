@@ -1,11 +1,10 @@
 <template>
-    <div>
+    <div flex flex-col items-center>
       <Headerr />
       <Navbar />
-  
       <div class="flex flex-col items-center mb-10 mt-10 ">
+        <h2 class="text-2xl font-bold ml-10 mr-10 mb-10">Akreditasi</h2>
         <div v-if="identitas" class="flex flex-col my-10 items-center">
-          <!-- First Table -->
           <table class="mb-10 ">
             <tbody>
               <tr v-for="(item, index) in items.Column1" :key="index">
@@ -15,7 +14,6 @@
             </tbody>
           </table>
   
-          <!-- Second Table -->
           <table class="mb-10 ">
             <thead>
               <tr>
@@ -66,7 +64,7 @@
     const response = await fetch('http://localhost:8055/items/Akreditas');
     const data = await response.json();
     items.value = data.data[0];
-  
+   
     // Fetch data from API 2
     const identitasResponse = await fetch('http://localhost:8055/items/identitas');
     const identitasData = await identitasResponse.json();

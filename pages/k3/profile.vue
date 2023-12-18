@@ -7,9 +7,10 @@
                 <h3 class="text-2xl font-bold ml-10 mr-10 mb-7">{{ heading }}</h3>
                 <p class="text-gray-600 ml-10 mr-10 mb-15">{{ konten }}</p>
                 <br>
-                <ol class="list-disc ml-10 mr-10 mb-15 text-16">
-                    <li v-for="sentence in konten0.split('\n')" :key="sentence">{{ sentence }}</li>
-                </ol>
+                <ul class="list-disc ml-10 mr-10 mb-15 text-16">
+            <!-- Iterate over each sentence and create a list item for each one -->
+            <li v-for="(sentence, index) in konten0.split('\n')" :key="index">{{ sentence }}</li>
+          </ul>
             </div>
         </div>
         <Footerr />
@@ -41,10 +42,9 @@ onMounted(async () => {
     }
 });
 </script>
-<style>
-.listorder {
-    list-style: auto;
-    margin-left: 30px;
-    margin-top: 10px;
+<style lang="css" scoped>
+.list-disc > li::before {
+content: '•'; /* Unicode character for bullet point */
+margin-right: 8px; /* Adjust spacing as needed */
 }
 </style>

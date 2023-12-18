@@ -4,6 +4,7 @@
       <Navbar />
   
       <div class="flex flex-col items-center mb-10 mt-10">
+        <h2 class="text-2xl font-bold ml-10 mr-10 mb-10">Tenaga Kependidikan</h2>
         <div v-if="programs && programs.data" class="my-10 flex flex-col items-center">
           <!-- Second Table -->
           <table class="mb-10 ">
@@ -60,13 +61,41 @@
   table {
     border-collapse: collapse;
     width: 90%;
+    font-size: 13px;
+   
+  }
+
+  th,td{
+    text-align: left;
+    padding: 8px 18px;
+
   }
   
-  td, th {
-    border: 1px solid black;
-    padding: 8px;
-    text-align: left;
+  
+  th {
+    border-bottom: 2px solid rgb(152, 152, 152);
+    
   }
+
+  .spesial, td{
+    border-top: 1px solid rgb(152, 152, 152);
+  }
+
+  .spesial, th{
+    background-color: #efefef;
+
+  }
+
+  td {
+    border-bottom: 1px solid rgb(152, 152, 152);
+    
+  }
+
+  .spesial{
+    border-right: 1px solid rgb(152, 152, 152);
+  }
+
+ 
   
   /* Optional: Add more spacing between columns */
   td:not(:last-child),
