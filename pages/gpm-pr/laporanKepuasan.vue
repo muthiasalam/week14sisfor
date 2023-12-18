@@ -69,15 +69,18 @@
         </div>
         <div class="ml-10 mr-10 mb-5">
             <h3 class="font-bold mb-5">{{ heading14 }}</h3>
-            <div class="flex flex-col items-center mb-10">
-                <img :src='`http://localhost:8055/assets/e6c2c65e-113f-4070-af02-b8ef2682233a`' class="w-2/6">
+            <div class="flex flex-col mb-5">
+                <img :src='`http://localhost:8055/assets/f2157a62-5496-49db-a149-9f46879a4150`' class="w-4/8">
+            </div>
+            <div class="flex flex-col mb-10">
+                <img :src='`http://localhost:8055/assets/e6c2c65e-113f-4070-af02-b8ef2682233a`' class="w-4/5">
             </div>
             <p v-html="formatHTML(konten14)"></p>
         </div>
         <div class="ml-10 mr-10">
             <h3 class="font-bold mb-5">{{ heading15 }}</h3>
-            <div class="flex flex-col items-center mb-10">
-                <img :src='`http://localhost:8055/assets/b9b9a65b-f95e-4eae-b0e8-9c21c478a9fe`' class="w-2/6">
+            <div class="flex flex-col mb-10">
+                <img :src='`http://localhost:8055/assets/b9b9a65b-f95e-4eae-b0e8-9c21c478a9fe`' class="w-4/5">
             </div>
             <p v-html="formatHTML(konten15)"></p>
         </div>
