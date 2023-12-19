@@ -8,13 +8,16 @@
         <div class="hidden xl:flex">
           <a href="#" class="hover:bg-red-500 text-white">PROFIL</a>
           <div class="submenu hidden absolute bg-merahdesain z-20 mt-4 py-2 px-4 text-white shadow-lg">
-            <a href="/profil/sejarah-singkat" class="py-2 block hover:bg-red-500">SEJARAH SINGKAT</a>
-            <a href="/profil/visi-misi-dan-sasaran" class="py-2 block hover:bg-red-500">VISI MISI DAN SASARAN</a>
-            <a href="/profil/manajemen" class="py-2 block hover:bg-red-500">MANAJEMEN</a>
-            <a href="/profil/struktur-organisasi" class="py-2 block hover:bg-red-500">STRUKTUR ORGANISASI</a>
-            <a href="/profil/master-plan" class="py-2 block hover:bg-red-500">MASTER PLAN</a>
-            <a href="/profil/peta-kampus" class="py-2 block hover:bg-red-500">PETA KAMPUS</a>
-            <a href="/profil/mediatek" class="py-2 block hover:bg-red-500">MEDIATEK</a>
+            <router-link to="/profil/sejarah-singkat" class="py-2 block hover:bg-red-500">SEJARAH SINGKAT</router-link>
+            <router-link to="/profil/visi-misi-dan-sasaran" class="py-2 block hover:bg-red-500">VISI MISI DAN
+              SASARAN</router-link>
+            <router-link to="/profil/manajemen" class="py-2 block hover:bg-red-500">MANAJEMEN</router-link>
+            <router-link to="/profil/struktur-organisasi" class="py-2 block hover:bg-red-500">STRUKTUR
+              ORGANISASI</router-link>
+            <router-link to="/profil/master-plan" class="py-2 block hover:bg-red-500">MASTER PLAN</router-link>
+            <router-link to="/profil/peta-kampus" class="py-2 block hover:bg-red-500">PETA KAMPUS</router-link>
+            <router-link to="/profil/mediatek" class="py-2 block hover:bg-red-500">MEDIATEK</router-link>
+
           </div>
           <img loading="lazy" src="../assets/footer/dropdown.png"
             class="aspect-square object-cover object-center w-4 overflow-hidden self-center shrink-0 my-auto" />
@@ -22,12 +25,14 @@
         <div class=" hidden xl:flex">
           <a href="#" class="hover:bg-red-500 text-white">AKADEMIK</a>
           <div class="submenu hidden absolute bg-merahdesain z-20 mt-4 py-2 px-4 text-white shadow-lg">
-            <a href="/akademik/departemen" class="py-2 block hover:bg-red-500">DEPARTEMEN</a>
-            <a href="/akademik/program-magister" class="py-2 block hover:bg-red-500">PROGRAM MAGISTER</a>
-            <a href="/akademik/program-doktor" class="py-2 block hover:bg-red-500">PROGRAM DOKTOR</a>
-            <a href="/akademik/program-profesi" class="py-2 block hover:bg-red-500">PROGRAM PROFESI</a>
-            <a href="/akademik/akreditasi" class="py-2 block hover:bg-red-500">AKREDITASI</a>
-            <a href="/akademik/kalender-akademik" class="py-2 block hover:bg-red-500">KALENDER AKADEMIK</a>
+            <router-link to="/akademik/departemen" class="py-2 block hover:bg-red-500">DEPARTEMEN</router-link>
+            <router-link to="/akademik/program-magister" class="py-2 block hover:bg-red-500">PROGRAM
+              MAGISTER</router-link>
+            <router-link to="/akademik/program-doktor" class="py-2 block hover:bg-red-500">PROGRAM DOKTOR</router-link>
+            <router-link to="/akademik/program-profesi" class="py-2 block hover:bg-red-500">PROGRAM PROFESI</router-link>
+            <router-link to="/akademik/akreditasi" class="py-2 block hover:bg-red-500">AKREDITASI</router-link>
+            <router-link to="/akademik/kalender-akademik" class="py-2 block hover:bg-red-500">KALENDER
+              AKADEMIK</router-link>
           </div>
           <img loading="lazy" src="../assets/footer/dropdown.png"
             class="aspect-square object-cover object-center w-4 overflow-hidden self-center shrink-0 my-auto" />
@@ -35,10 +40,12 @@
         <div class=" hidden xl:flex">
           <a href="#" class="hover:bg-red-500 text-white">SUMBER DAYA</a>
           <div class="submenu hidden absolute bg-merahdesain z-20 mt-4 py-2 px-4 text-white shadow-lg">
-            <a href="/sumber-daya/guru-besar" class="py-2 block hover:bg-red-500">GURU BESAR</a>
-            <a href="/sumber-daya/tenaga-kependidikan" class="py-2 block hover:bg-red-500">TENAGA KEPENDIDIKAN</a>
-            <a href="/sumber-daya/sarana-dan-prasarana" class="py-2 block hover:bg-red-500">SARANA DAN PRASARANA</a>
-            <a href="/sumber-daya/perpustakaan" class="py-2 block hover:bg-red-500">PERPUSTAKAAN</a>
+            <router-link to="/sumber-daya/guru-besar" class="py-2 block hover:bg-red-500">GURU BESAR</router-link>
+            <router-link to="/sumber-daya/tenaga-kependidikan" class="py-2 block hover:bg-red-500">TENAGA
+              KEPENDIDIKAN</router-link>
+            <router-link to="/sumber-daya/sarana-dan-prasarana" class="py-2 block hover:bg-red-500">SARANA DAN
+              PRASARANA</router-link>
+            <router-link to="/sumber-daya/perpustakaan" class="py-2 block hover:bg-red-500">PERPUSTAKAAN</router-link>
           </div>
           <img loading="lazy" src="../assets/footer/dropdown.png"
             class="aspect-square object-cover object-center w-4 overflow-hidden self-center shrink-0 my-auto" />
@@ -46,10 +53,11 @@
         <div class=" hidden xl:flex">
           <a href="#" class="hover:bg-red-500 text-white">K3</a>
           <div class="submenu hidden absolute bg-merahdesain z-20 mt-4 py-2 px-4 text-white shadow-lg">
-            <a href="/k3/profil-k3" class="py-2 block hover:bg-red-500">PROFIL K3</a>
-            <a href="/k3/struktur-organisasi-k3" class="py-2 block hover:bg-red-500">STRUKTUR ORGANISASI K3</a>
-            <a href="/k3/tentang-k3-ft-uh" class="py-2 block hover:bg-red-500">TENTANG K3 FT-UH</a>
-            <a href="/k3/file-pendukung" class="py-2 block hover:bg-red-500">FILE PENDUKUNG</a>
+            <router-link to="/k3/profil-k3" class="py-2 block hover:bg-red-500">PROFIL K3</router-link>
+            <router-link to="/k3/struktur-organisasi-k3" class="py-2 block hover:bg-red-500">STRUKTUR ORGANISASI
+              K3</router-link>
+            <router-link to="/k3/tentang-k3-ft-uh" class="py-2 block hover:bg-red-500">TENTANG K3 FT-UH</router-link>
+            <router-link to="/k3/file-pendukung" class="py-2 block hover:bg-red-500">FILE PENDUKUNG</router-link>
           </div>
           <img loading="lazy" src="../assets/footer/dropdown.png"
             class="aspect-square object-cover object-center w-4 overflow-hidden self-center shrink-0 my-auto" />
@@ -57,13 +65,18 @@
         <div class=" hidden xl:flex">
           <a href="#" class="hover:bg-red-500 text-white">KEMAHASISWAAN</a>
           <div class="submenu hidden absolute bg-merahdesain z-20 mt-4 py-2 px-4 text-white shadow-lg">
-            <a href="/kemahasiswaan/upt-asrama-ramtek" class="py-2 block hover:bg-red-500">UPT ASRAMA (RAMTEK)</a>
-            <a href="/kemahasiswaan/pengembangan-karakter-mahasiswa" class="py-2 block hover:bg-red-500">PENGEMBANGAN KARAKTER MAHASISWA</a>
-            <a href="/kemahasiswaan/peningkatan-prestasi-mahasiswa" class="py-2 block hover:bg-red-500">PENINGKATAN PRESTASI MAHASISWA</a>
-            <a href="/kemahasiswaan/mahasiswa-inbound-dan-outbound" class="py-2 block hover:bg-red-500">MAHASISWA INBOUND DAN OUTBOUND</a>
-            <a href="/kemahasiswaan/alumni" class="py-2 block hover:bg-red-500">ALUMNI</a>
-            <a href="/kemahasiswaan/aturan-kemahasiswaan" class="py-2 block hover:bg-red-500">ATURAN KEMAHASISWAAN</a>
-            <a href="/kemahasiswaan/pengumuman" class="py-2 block hover:bg-red-500">PENGUMUMAN</a>
+            <router-link to="/kemahasiswaan/upt-asrama-ramtek" class="py-2 block hover:bg-red-500">UPT ASRAMA
+              (RAMTEK)</router-link>
+            <router-link to="/kemahasiswaan/pengembangan-karakter-mahasiswa"
+              class="py-2 block hover:bg-red-500">PENGEMBANGAN KARAKTER MAHASISWA</router-link>
+            <router-link to="/kemahasiswaan/peningkatan-prestasi-mahasiswa"
+              class="py-2 block hover:bg-red-500">PENINGKATAN PRESTASI MAHASISWA</router-link>
+            <router-link to="/kemahasiswaan/mahasiswa-inbound-dan-outbound" class="py-2 block hover:bg-red-500">MAHASISWA
+              INBOUND DAN OUTBOUND</router-link>
+            <router-link to="/kemahasiswaan/alumni" class="py-2 block hover:bg-red-500">ALUMNI</router-link>
+            <router-link to="/kemahasiswaan/aturan-kemahasiswaan" class="py-2 block hover:bg-red-500">ATURAN
+              KEMAHASISWAAN</router-link>
+            <router-link to="/kemahasiswaan/pengumuman" class="py-2 block hover:bg-red-500">PENGUMUMAN</router-link>
           </div>
           <img loading="lazy" src="../assets/footer/dropdown.png"
             class="aspect-square object-cover object-center w-4 overflow-hidden self-center shrink-0 my-auto" />
@@ -71,9 +84,12 @@
         <div class=" hidden xl:flex">
           <a href="#" class="hover:bg-red-500 text-white">RISET DAN INOVASI</a>
           <div class="submenu hidden absolute bg-merahdesain z-20 mt-4 py-2 px-4 text-white shadow-lg">
-            <a href="/riset-dan-inovasi/daftar-penelitian-lbe-tahun-2020" class="py-2 block hover:bg-red-500">DAFTAR PENELITIAN TERDAHULU</a>
-            <a href="/riset-dan-inovasi/hasil-inovasi" class="py-2 block hover:bg-red-500">HASIL INOVASI</a>
-            <a href="/riset-dan-inovasi/hak-kekayaan-intelektual" class="py-2 block hover:bg-red-500">HAK KEKAYAAN INTELEKTUAL</a>
+            <router-link to="/riset-dan-inovasi/daftar-penelitian-lbe-tahun-2020"
+              class="py-2 block hover:bg-red-500">DAFTAR PENELITIAN TERDAHULU</router-link>
+            <router-link to="/riset-dan-inovasi/hasil-inovasi" class="py-2 block hover:bg-red-500">HASIL
+              INOVASI</router-link>
+            <router-link to="/riset-dan-inovasi/hak-kekayaan-intelektual" class="py-2 block hover:bg-red-500">HAK KEKAYAAN
+              INTELEKTUAL</router-link>
           </div>
           <img loading="lazy" src="../assets/footer/dropdown.png"
             class="aspect-square object-cover object-center w-4 overflow-hidden self-center shrink-0 my-auto" />
@@ -81,8 +97,10 @@
         <div class=" hidden xl:flex">
           <a href="#" class="hover:bg-red-500 text-white">KEMITRAAN</a>
           <div class="submenu hidden absolute bg-merahdesain z-20 mt-4 py-2 px-4 text-white shadow-lg">
-            <a href="/kemitraan/kemitraan-dalam-negeri" class="py-2 block hover:bg-red-500">KERJASAMA DALAM NEGERI</a>
-            <a href="/kemitraan/kemitraan-luar-negeri" class="py-2 block hover:bg-red-500">KERJASAMA LUAR NEGERI</a>
+            <router-link to="/kemitraan/kemitraan-dalam-negeri" class="py-2 block hover:bg-red-500">KERJASAMA DALAM
+              NEGERI</router-link>
+            <router-link to="/kemitraan/kemitraan-luar-negeri" class="py-2 block hover:bg-red-500">KERJASAMA LUAR
+              NEGERI</router-link>
           </div>
           <img loading="lazy" src="../assets/footer/dropdown.png"
             class="aspect-square object-cover object-center w-4 overflow-hidden self-center shrink-0 my-auto" />
@@ -90,13 +108,16 @@
         <div class=" hidden xl:flex">
           <a href="#" class="hover:bg-red-500 text-white">GPM-PR</a>
           <div class="submenu hidden absolute bg-merahdesain z-20 mt-4 py-2 px-4 text-white shadow-lg">
-            <a href="/gpm-pr/profil-gpm-pr" class="py-2 block hover:bg-red-500">PROFIL GPM-PR</a>
-            <a href="/gpm-pr/dokumen-mutu" class="py-2 block hover:text-red-500">DOKUMEN MUTU</a>
-            <a href="/gpm-pr/audit-mutu-akademik-internal" class="py-2 block hover:bg-red-500">AUDIT MUTU AKADEMIK INTERNAL</a>
-            <a href="/gpm-pr/lam-teknik" class="py-2 block hover:bg-red-500">LAM TEKNIK</a>
-            <a href="/gpm-pr/laporan-kepuasan-pengguna" class="py-2 block hover:bg-red-500">LAPORAN KEPUASAN PENGGUNA</a>
-            <a href="/gpm-pr/survei-kepuasan-layanan-mahasiswa" class="py-2 block hover:bg-red-500">SURVEI KEPUASAN LAYANAN MAHASISWA</a>
-            <a href="/gpm-pr/galeri" class="py-2 block hover:bg-red-500">GALERI</a>
+            <router-link to="/gpm-pr/profil-gpm-pr" class="py-2 block hover:bg-red-500">PROFIL GPM-PR</router-link>
+            <router-link to="/gpm-pr/dokumen-mutu" class="py-2 block hover:bg-red-500">DOKUMEN MUTU</router-link>
+            <router-link to="/gpm-pr/audit-mutu-akademik-internal" class="py-2 block hover:bg-red-500">AUDIT MUTU AKADEMIK
+              INTERNAL</router-link>
+            <router-link to="/gpm-pr/lam-teknik" class="py-2 block hover:bg-red-500">LAM TEKNIK</router-link>
+            <router-link to="/gpm-pr/laporan-kepuasan-pengguna" class="py-2 block hover:bg-red-500">LAPORAN KEPUASAN
+              PENGGUNA</router-link>
+            <router-link to="/gpm-pr/survei-kepuasan-layanan-mahasiswa" class="py-2 block hover:bg-red-500">SURVEI
+              KEPUASAN LAYANAN MAHASISWA</router-link>
+            <router-link to="/gpm-pr/galeri" class="py-2 block hover:bg-red-500">GALERI</router-link>
           </div>
           <img loading="lazy" src="../assets/footer/dropdown.png"
             class="aspect-square object-cover object-center w-4 overflow-hidden self-center shrink-0 my-auto" />
@@ -104,10 +125,11 @@
         <div class=" hidden xl:flex">
           <a href="#" class="hover:bg-red-500 text-white">COT</a>
           <div class="submenu hidden absolute bg-merahdesain z-20 mt-4 py-2 px-4 text-white shadow-lg">
-            <a href="/cot/cot-website" class="py-2 block hover:bg-red-500">COT WEBSITE</a>
-            <a href="/cot/jurnal-cot" class="py-2 block hover:bg-red-500">JURNAL COT</a>
-            <a href="/cot/cot-newsletter" class="py-2 block hover:bg-red-500">COT NEWSLETTER</a>
-            <a href="/cot/u-i-g-collaboration" class="py-2 block hover:bg-red-500">U-I-G COLLABORATION</a>
+            <router-link to="/cot/cot-website" class="py-2 block hover:bg-red-500">COT WEBSITE</router-link>
+            <router-link to="/cot/jurnal-cot" class="py-2 block hover:bg-red-500">JURNAL COT</router-link>
+            <router-link to="/cot/cot-newsletter" class="py-2 block hover:bg-red-500">COT NEWSLETTER</router-link>
+            <router-link to="/cot/u-i-g-collaboration" class="py-2 block hover:bg-red-500">U-I-G
+              COLLABORATION</router-link>
           </div>
           <img loading="lazy" src="../assets/footer/dropdown.png"
             class="aspect-square object-cover object-center w-4 overflow-hidden self-center shrink-0 my-auto" />
@@ -115,8 +137,10 @@
         <div class="hidden xl:flex">
           <a href="#" class="hover:bg-red-500 text-white">DHARMA WANITA</a>
           <div class="submenu hidden absolute bg-merahdesain z-20 mt-4 py-2 px-4 text-white shadow-lg">
-            <a href="/dharma_wanita/halaman-utama" class="py-2 block hover:bg-red-500">HALAMAN UTAMA DHARMA WANITA</a>
-            <a href="/dharma_wanita/struktur-organisasi-dharmawanita" class="py-2 block hover:bg-red-500">STRUKTUR ORGANISASI DHARMAWANITA</a>
+            <router-link to="/dharma_wanita/halaman-utama" class="py-2 block hover:bg-red-500">HALAMAN UTAMA DHARMA
+              WANITA</router-link>
+            <router-link to="/dharma_wanita/struktur-organisasi-dharmawanita" class="py-2 block hover:bg-red-500">STRUKTUR
+              ORGANISASI DHARMAWANITA</router-link>
           </div>
           <img loading="lazy" src="../assets/footer/dropdown.png"
             class="aspect-square object-cover object-center w-4 overflow-hidden self-center shrink-0 my-auto" />
@@ -146,118 +170,129 @@
 
   <div class="hidden" id="mobile-menu">
     <ul class="flex-col bg-white p-0 space-y-0">
-      <li class="py-2 ml-10 mr-10 border-t-2 border-b hover:bg-red-500 hover:text-white m-0 p-0 flex items-center" id="beranda">
-      <span class=" ml-17 mr-17 text-10 font-bold" >BERANDA</span>
-    </li>
-
-    
-    <li class="py-2 ml-10 mr-10 border-t-2 border-b hover:bg-red-500 hover:text-white m-0 p-0 flex items-center" id="profil">
-      <span class=" ml-17 mr-17 text-10 font-bold" >PROFIL</span>
-    </li>
-    <li class="hidden py-2 ml-10 mr-10 m-0 p-0 flex items-center" id="submenu1">
-      <div class="flex-col">
-        <div><a href="#submenu1" class="ml-17 mr-17 py-2 text-10 font-bold" >SUBMENU 1</a></div>
-        <div><a href="#submenu2" class="ml-17 mr-17 py-2 text-10 font-bold" >SUBMENU 2</a></div>
-      </div>
-    </li>
-
-    <li class="py-2 ml-10 mr-10 border-t-2 border-b hover:bg-red-500 hover:text-white m-0 p-0 flex items-center" id="akademik">
-      <span class=" ml-17 mr-17 text-10 font-bold" >AKADEMIK</span>
-    </li>
-    <li class="hidden py-2 ml-10 mr-10 m-0 p-0 flex items-center" id="submenu2">
-      <div class="flex-col">
-        <div><a href="#submenu1" class="ml-17 mr-17 py-2 text-10 font-bold" >SUBMENU 1</a></div>
-        <div><a href="#submenu2" class="ml-17 mr-17 py-2 text-10 font-bold" >SUBMENU 2</a></div>
-      </div>
-    </li>
+      <li class="py-2 ml-10 mr-10 border-t-2 border-b hover:bg-red-500 hover:text-white m-0 p-0 flex items-center"
+        id="beranda">
+        <span class=" ml-17 mr-17 text-10 font-bold">BERANDA</span>
+      </li>
 
 
+      <li class="py-2 ml-10 mr-10 border-t-2 border-b hover:bg-red-500 hover:text-white m-0 p-0 flex items-center"
+        id="profil">
+        <span class=" ml-17 mr-17 text-10 font-bold">PROFIL</span>
+      </li>
+      <li class="hidden py-2 ml-10 mr-10 m-0 p-0 flex items-center" id="submenu1">
+        <div class="flex-col">
+          <div><a href="#submenu1" class="ml-17 mr-17 py-2 text-10 font-bold">SUBMENU 1</a></div>
+          <div><a href="#submenu2" class="ml-17 mr-17 py-2 text-10 font-bold">SUBMENU 2</a></div>
+        </div>
+      </li>
+
+      <li class="py-2 ml-10 mr-10 border-t-2 border-b hover:bg-red-500 hover:text-white m-0 p-0 flex items-center"
+        id="akademik">
+        <span class=" ml-17 mr-17 text-10 font-bold">AKADEMIK</span>
+      </li>
+      <li class="hidden py-2 ml-10 mr-10 m-0 p-0 flex items-center" id="submenu2">
+        <div class="flex-col">
+          <div><a href="#submenu1" class="ml-17 mr-17 py-2 text-10 font-bold">SUBMENU 1</a></div>
+          <div><a href="#submenu2" class="ml-17 mr-17 py-2 text-10 font-bold">SUBMENU 2</a></div>
+        </div>
+      </li>
 
 
-      <li class="py-2 ml-10 mr-10 border-t-2 border-b hover:bg-red-500 hover:text-white m-0 p-0 flex items-center" id="sumber">
-      <span class=" ml-17 mr-17 text-10 font-bold" >SUMBER DAYA</span>
-    </li>
-    <li class="hidden py-2 ml-10 mr-10 m-0 p-0 flex items-center" id="submenu3">
-      <div class="flex-col">
-        <div><a href="#submenu1" class="ml-17 mr-17 py-2 text-10 font-bold" >SUBMENU 1</a></div>
-        <div><a href="#submenu2" class="ml-17 mr-17 py-2 text-10 font-bold" >SUBMENU 2</a></div>
-      </div>
-    </li>
 
 
-    <li class="py-2 ml-10 mr-10 border-t-2 border-b hover:bg-red-500 hover:text-white m-0 p-0 flex items-center" id="k3">
-      <span class=" ml-17 mr-17 text-10 font-bold" >K3</span>
-    </li>
-    <li class="hidden py-2 ml-10 mr-10 m-0 p-0 flex items-center" id="submenu4">
-      <div class="flex-col">
-        <div><a href="#submenu1" class="ml-17 mr-17 py-2 text-10 font-bold" >SUBMENU 1</a></div>
-        <div><a href="#submenu2" class="ml-17 mr-17 py-2 text-10 font-bold" >SUBMENU 2</a></div>
-      </div>
-    </li>
+      <li class="py-2 ml-10 mr-10 border-t-2 border-b hover:bg-red-500 hover:text-white m-0 p-0 flex items-center"
+        id="sumber">
+        <span class=" ml-17 mr-17 text-10 font-bold">SUMBER DAYA</span>
+      </li>
+      <li class="hidden py-2 ml-10 mr-10 m-0 p-0 flex items-center" id="submenu3">
+        <div class="flex-col">
+          <div><a href="#submenu1" class="ml-17 mr-17 py-2 text-10 font-bold">SUBMENU 1</a></div>
+          <div><a href="#submenu2" class="ml-17 mr-17 py-2 text-10 font-bold">SUBMENU 2</a></div>
+        </div>
+      </li>
 
 
-      <li class="py-2 ml-10 mr-10 border-t-2 border-b hover:bg-red-500 hover:text-white m-0 p-0 flex items-center" id="kemahasiswaan">
-      <span class=" ml-17 mr-17 text-10 font-bold" >KEMAHASISWAAN</span>
-    </li>
-    <li class="hidden py-2 ml-10 mr-10 m-0 p-0 flex items-center" id="submenu5">
-      <div class="flex-col">
-        <div><a href="#submenu1" class="ml-17 mr-17 py-2 text-10 font-bold" >SUBMENU 1</a></div>
-        <div><a href="#submenu2" class="ml-17 mr-17 py-2 text-10 font-bold" >SUBMENU 2</a></div>
-      </div>
-    </li>
+      <li class="py-2 ml-10 mr-10 border-t-2 border-b hover:bg-red-500 hover:text-white m-0 p-0 flex items-center"
+        id="k3">
+        <span class=" ml-17 mr-17 text-10 font-bold">K3</span>
+      </li>
+      <li class="hidden py-2 ml-10 mr-10 m-0 p-0 flex items-center" id="submenu4">
+        <div class="flex-col">
+          <div><a href="#submenu1" class="ml-17 mr-17 py-2 text-10 font-bold">SUBMENU 1</a></div>
+          <div><a href="#submenu2" class="ml-17 mr-17 py-2 text-10 font-bold">SUBMENU 2</a></div>
+        </div>
+      </li>
 
 
-    <li class="py-2 ml-10 mr-10 border-t-2 border-b hover:bg-red-500 hover:text-white m-0 p-0 flex items-center" id="riset">
-      <span class=" ml-17 mr-17 text-10 font-bold" >RISET DAN INOVASI</span>
-    </li>
-    <li class="hidden py-2 ml-10 mr-10 m-0 p-0 flex items-center" id="submenu6">
-      <div class="flex-col">
-        <div><a href="#submenu1" class="ml-17 mr-17 py-2 text-10 font-bold" >SUBMENU 1</a></div>
-        <div><a href="#submenu2" class="ml-17 mr-17 py-2 text-10 font-bold" >SUBMENU 2</a></div>
-      </div>
-    </li>
+      <li class="py-2 ml-10 mr-10 border-t-2 border-b hover:bg-red-500 hover:text-white m-0 p-0 flex items-center"
+        id="kemahasiswaan">
+        <span class=" ml-17 mr-17 text-10 font-bold">KEMAHASISWAAN</span>
+      </li>
+      <li class="hidden py-2 ml-10 mr-10 m-0 p-0 flex items-center" id="submenu5">
+        <div class="flex-col">
+          <div><a href="#submenu1" class="ml-17 mr-17 py-2 text-10 font-bold">SUBMENU 1</a></div>
+          <div><a href="#submenu2" class="ml-17 mr-17 py-2 text-10 font-bold">SUBMENU 2</a></div>
+        </div>
+      </li>
 
 
-    <li class="py-2 ml-10 mr-10 border-t-2 border-b hover:bg-red-500 hover:text-white m-0 p-0 flex items-center" id="kemitraan">
-      <span class=" ml-17 mr-17 text-10 font-bold" >KEMITRAAN</span>
-    </li>
-    <li class="hidden py-2 ml-10 mr-10 m-0 p-0 flex items-center" id="submenu7">
-      <div class="flex-col">
-        <div><a href="#submenu1" class="ml-17 mr-17 py-2 text-10 font-bold" >SUBMENU 1</a></div>
-        <div><a href="#submenu2" class="ml-17 mr-17 py-2 text-10 font-bold" >SUBMENU 2</a></div>
-      </div>
-    </li>
+      <li class="py-2 ml-10 mr-10 border-t-2 border-b hover:bg-red-500 hover:text-white m-0 p-0 flex items-center"
+        id="riset">
+        <span class=" ml-17 mr-17 text-10 font-bold">RISET DAN INOVASI</span>
+      </li>
+      <li class="hidden py-2 ml-10 mr-10 m-0 p-0 flex items-center" id="submenu6">
+        <div class="flex-col">
+          <div><a href="#submenu1" class="ml-17 mr-17 py-2 text-10 font-bold">SUBMENU 1</a></div>
+          <div><a href="#submenu2" class="ml-17 mr-17 py-2 text-10 font-bold">SUBMENU 2</a></div>
+        </div>
+      </li>
 
 
-    <li class="py-2 ml-10 mr-10 border-t-2 border-b hover:bg-red-500 hover:text-white m-0 p-0 flex items-center" id="dpm">
-      <span class=" ml-17 mr-17 text-10 font-bold" >DPM</span>
-    </li>
-    <li class="hidden py-2 ml-10 mr-10 m-0 p-0 flex items-center" id="submenu8">
-      <div class="flex-col">
-        <div><a href="#submenu1" class="ml-17 mr-17 py-2 text-10 font-bold" >SUBMENU 1</a></div>
-        <div><a href="#submenu2" class="ml-17 mr-17 py-2 text-10 font-bold" >SUBMENU 2</a></div>
-      </div>
-    </li>
+      <li class="py-2 ml-10 mr-10 border-t-2 border-b hover:bg-red-500 hover:text-white m-0 p-0 flex items-center"
+        id="kemitraan">
+        <span class=" ml-17 mr-17 text-10 font-bold">KEMITRAAN</span>
+      </li>
+      <li class="hidden py-2 ml-10 mr-10 m-0 p-0 flex items-center" id="submenu7">
+        <div class="flex-col">
+          <div><a href="#submenu1" class="ml-17 mr-17 py-2 text-10 font-bold">SUBMENU 1</a></div>
+          <div><a href="#submenu2" class="ml-17 mr-17 py-2 text-10 font-bold">SUBMENU 2</a></div>
+        </div>
+      </li>
 
-    <li class="py-2 ml-10 mr-10 border-t-2 border-b hover:bg-red-500 hover:text-white m-0 p-0 flex items-center" id="cot">
-      <span class=" ml-17 mr-17 text-10 font-bold" >COT</span>
-    </li>
-    <li class="hidden py-2 ml-10 mr-10 m-0 p-0 flex items-center" id="submenu9">
-      <div class="flex-col">
-        <div><a href="#submenu1" class="ml-17 mr-17 py-2 text-10 font-bold" >SUBMENU 1</a></div>
-        <div><a href="#submenu2" class="ml-17 mr-17 py-2 text-10 font-bold" >SUBMENU 2</a></div>
-      </div>
-    </li>
 
-    <li class="py-2 ml-10 mr-10 border-t-2 border-b hover:bg-red-500 hover:text-white m-0 p-0 flex items-center" id="dharma">
-      <span class=" ml-17 mr-17 text-10 font-bold" >DHARMA</span>
-    </li>
-    <li class="hidden py-2 ml-10 mr-10 m-0 p-0 flex items-center" id="submenu10">
-      <div class="flex-col">
-        <div><a href="#submenu1" class="ml-17 mr-17 py-2 text-10 font-bold" >SUBMENU 1</a></div>
-        <div><a href="#submenu2" class="ml-17 mr-17 py-2 text-10 font-bold" >SUBMENU 2</a></div>
-      </div>
-    </li>
+      <li class="py-2 ml-10 mr-10 border-t-2 border-b hover:bg-red-500 hover:text-white m-0 p-0 flex items-center"
+        id="dpm">
+        <span class=" ml-17 mr-17 text-10 font-bold">DPM</span>
+      </li>
+      <li class="hidden py-2 ml-10 mr-10 m-0 p-0 flex items-center" id="submenu8">
+        <div class="flex-col">
+          <div><a href="#submenu1" class="ml-17 mr-17 py-2 text-10 font-bold">SUBMENU 1</a></div>
+          <div><a href="#submenu2" class="ml-17 mr-17 py-2 text-10 font-bold">SUBMENU 2</a></div>
+        </div>
+      </li>
+
+      <li class="py-2 ml-10 mr-10 border-t-2 border-b hover:bg-red-500 hover:text-white m-0 p-0 flex items-center"
+        id="cot">
+        <span class=" ml-17 mr-17 text-10 font-bold">COT</span>
+      </li>
+      <li class="hidden py-2 ml-10 mr-10 m-0 p-0 flex items-center" id="submenu9">
+        <div class="flex-col">
+          <div><a href="#submenu1" class="ml-17 mr-17 py-2 text-10 font-bold">SUBMENU 1</a></div>
+          <div><a href="#submenu2" class="ml-17 mr-17 py-2 text-10 font-bold">SUBMENU 2</a></div>
+        </div>
+      </li>
+
+      <li class="py-2 ml-10 mr-10 border-t-2 border-b hover:bg-red-500 hover:text-white m-0 p-0 flex items-center"
+        id="dharma">
+        <span class=" ml-17 mr-17 text-10 font-bold">DHARMA</span>
+      </li>
+      <li class="hidden py-2 ml-10 mr-10 m-0 p-0 flex items-center" id="submenu10">
+        <div class="flex-col">
+          <div><a href="#submenu1" class="ml-17 mr-17 py-2 text-10 font-bold">SUBMENU 1</a></div>
+          <div><a href="#submenu2" class="ml-17 mr-17 py-2 text-10 font-bold">SUBMENU 2</a></div>
+        </div>
+      </li>
 
     </ul>
   </div>
