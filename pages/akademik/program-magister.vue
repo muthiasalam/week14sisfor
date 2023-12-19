@@ -2,7 +2,6 @@
     <Headerr/>
     <Navbar/>
     <div class="flex flex-col items-center mt-10 mb-10 ml-15 mr-15">
-      
       <div>
         <h3 class="text-2xl font-bold ml-10 mr-10 mb-7">{{ heading }}</h3>
         <p class="text-gray-600 ml-10 mr-10 mb-15" v-html="formattedKonten"></p>

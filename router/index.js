@@ -1,25 +1,61 @@
 import Vue from 'vue';
 import Router from 'vue-router';
+
+//profil
+import SejarahSingkat from '@/pages/profil/sejarah-singkat.vue';
+import VisiMisiSasaran from '@/pages/profil/visi-misi-dan-sasaran.vue';
+import StrukturOrganisasi from '@/pages/profil/struktur-organisasi.vue';
+import MasterPlan from '@/pages/profil/master-plan.vue';
+import PetaKampus from '@/pages/profil/peta-kampus.vue';
+import Mediatek from '@/pages/profil/mediatek.vue';
+import Manajemen from '@/pages/profil/manajemen.vue';
+
+//akademik
 import Akreditasi from '@/pages/akademik/akreditasi.vue';
 import Departemen from '@/pages/akademik/departemen.vue';
-import Magister from '@/pages/akademik/Magister.vue';
-import Doktor from '@/pages/akademik/Doktor.vue';
-import Profesi from '@/pages/akademik/Profesi.vue';
-import KalendarAkademik from '@/pages/akademik/kalendarAkademik.vue';
+import Magister from '@/pages/akademik/program-magister.vue';
+import Doktor from '@/pages/akademik/program-doktor.vue';
+import Profesi from '@/pages/akademik/program-profesi.vue';
+import KalendarAkademik from '@/pages/akademik/kalender-akademik.vue';
 
+//sumber daya
 import GuruBesar from '@/pages/sumber_daya/guru_besar.vue';
 import TenagaKependidikan from '@/pages/sumber_daya/tenagaKependidikan.vue';
 import SaranaPrasarana from '@/pages/sumber_daya/saranaPrasarana.vue';
 import Perpustakaan from '@/pages/sumber_daya/perpustakaan.vue';
 
+//k3
+import ProfilK3 from '@/pages/k3/profil-k3.vue';
+import StrukturOrganisasik3 from '@/pages/k3/struktur-organisasi-k3.vue';
+import TentangK3 from '@/pages/k3/tentang-k3-ft-uh.vue';
+import FilePendukung from '@/pages/k3/file-pendukung.vue';
+
 //kemahasiswaan
-import Ramtek from '@/pages/kemahasiswaan/ramtek.vue';
-import PengembanganKarakter from '@/pages/kemahasiswaan/pengembanganKarakter.vue';
-import PeningkatanPrestasi from '@/pages/kemahasiswaan/peningkatanPrestasi.vue';
-import MahasiswaInOutbound from '@/pages/kemahasiswaan/inboundOutbound.vue';
+import Ramtek from '@/pages/kemahasiswaan/upt-asrama-ramtek.vue';
+import PengembanganKarakter from '@/pages/kemahasiswaan/pengembangan-karakter-mahasiswa.vue';
+import PeningkatanPrestasi from '@/pages/kemahasiswaan/peningkatan-prestasi-mahasiswa.vue';
+import MahasiswaInOutbound from '@/pages/kemahasiswaan/mahasiswa-inbound-dan-outbound.vue';
 import Alumni from '@/pages/kemahasiswaan/alumni.vue';
-import AturanKemahasiswaan from '@/pages/kemahasiswaan/aturan.vue';
+import AturanKemahasiswaan from '@/pages/kemahasiswaan/aturan-kemahasiswaan.vue';
 import Pengumuman from '@/pages/kemahasiswaan/pengumuman.vue';
+
+//riset dan inovasi
+import Haki from '@/pages/riset-dan-inovasi/hak-kekayaan-intelektual.vue'
+import Inovasi from '@/pages/riset-dan-inovasi/hasil-inovasi.vue'
+import Penelitian from '@/pages/riset-dan-inovasi/daftar-penelitian-lbe-tahun-2020.vue'
+
+//kemitraan
+import LuarNegeri from '@/pages/kemitraan/kemitraan-luar-negeri.vue'
+import DalamNegeri from '@/pages/kemitraan/kemitraan-dalam-negeri.vue'
+
+//gpm-pr
+import ProfilGPMPR from '@/pages/gpm-pr/profil-gpm-pr.vue';
+import DokumenMutu from '@/pages/gpm-pr/dokumen-mutu.vue';
+import AuditMutu from '@/pages/gpm-pr/audit-mutu-akademik-internal.vue';
+import LAMteknik from '@/pages/gpm-pr/lam-teknik.vue';
+import LaporanKepuasan from '@/pages/gpm-pr/laporan-kepuasan-pengguna.vue';
+import SurveiKepuasan from '@/pages/gpm-pr/survei-kepuasan-layanan-mahasiswa.vue';
+import GaleriGPMPR from '@/pages/gpm-pr/galeri.vue';
 
 //cot
 import Website from '@/pages/cot/website.vue';
@@ -30,37 +66,6 @@ import UIGcolab from '@/pages/cot/uigcolab.vue';
 //dharmawanita
 import HalamanUtama from '@/pages/dharma_wanita/halamanUtama.vue';
 import strukturOrganisasiDharma from '@/pages/dharma_wanita/strukturOrganisasi.vue';
-
-//gpm-pr
-import ProfilGPMPR from '@/pages/gpm-pr/profil.vue';
-import DokumenMutu from '@/pages/gpm-pr/dokumenMutu.vue';
-import AuditMutu from '@/pages/gpm-pr/auditMutu.vue';
-import LAMteknik from '@/pages/gpm-pr/lamTeknik.vue';
-import LaporanKepuasan from '@/pages/gpm-pr/laporanKepuasan.vue';
-import SurveiKepuasan from '@/pages/gpm-pr/surveiKepuasan.vue';
-import GaleriGPMPR from '@/pages/gpm-pr/galeri.vue';
-
-
-
-import SejarahSingkat from '@/pages/profil/sejarahSingkat.vue';
-import VisiMisiSasaran from '@/pages/profil/visiMisiSasaran.vue';
-import StrukturOrganisasi from '@/pages/profil/strukturOrganisasi.vue';
-import MasterPlan from '@/pages/profil/masterPlan.vue';
-import PetaKampus from '@/pages/profil/petaKampus.vue';
-import Mediatek from '@/pages/profil/mediatek.vue';
-import Manajemen from '@/pages/profil/manajemen.vue';
-
-//k3
-import ProfilK3 from '@/pages/k3/profile.vue';
-import StrukturOrganisasik3 from '@/pages/k3/strukturOrganisasi.vue';
-import TentangK3 from '@/pages/k3/tentang.vue';
-import FilePendukung from '@/pages/k3/file.vue';
-
-import LuarNegeri from '@/pages/kemitraan/luarNegeri.vue'
-import DalamNegeri from '@/pages/kemitraan/dalamNegeri.vue'
-import Haki from '@/pages/riset_dan_inovasi/haki.vue'
-import Inovasi from '@/pages/riset_dan_inovasi/inovasi.vue'
-import Penelitian from '@/pages/riset_dan_inovasi/penelitian.vue'
 
 
 
@@ -79,27 +84,27 @@ export default new Router({
       component: Akreditasi,
     },
     {
-        path: '/profil/sejarahSingkat',
+        path: '/profil/sejarah-singkat',
         name: 'SejarahSingkat',
         component: SejarahSingkat,
       },
       {
-        path: '/profil/visiMisiSasaran',
+        path: '/profil/visi-misi-dan-sasaran',
         name: 'VisiMisiSasaran',
         component: VisiMisiSasaran,
       },
       {
-        path: '/profil/strukturOrganisasi',
+        path: '/profil/struktur-organisasi',
         name: 'StrukturOrganisasi',
         component: StrukturOrganisasi,
       },
       {
-        path: '/profil/masterPlan',
+        path: '/profil/master-plan',
         name: 'MasterPlan',
         component: MasterPlan,
       },
       {
-        path: '/profil/petaKampus',
+        path: '/profil/peta-kampus',
         name: 'PetaKampus',
         component: PetaKampus,
       },
@@ -114,42 +119,42 @@ export default new Router({
         component: Departemen,
       },
       {
-        path: '/akademik/magister',
+        path: '/akademik/program-magister',
         name: 'Magister',
         component: Magister,
       },
       {
-        path: '/akademik/doktor',
+        path: '/akademik/program-doktor',
         name: 'Doktor',
         component: Doktor,
       },
       {
-        path: '/akademik/profesi',
+        path: '/akademik/program-profesi',
         name: 'Profesi',
         component: Profesi,
       },
       {
-        path: '/akademik/kalendarAkademik',
+        path: '/akademik/kalendar-akademik',
         name: 'KalendarAkademik',
         component: KalendarAkademik,
       },
       {
-        path: '/sumber_daya/guru_besar',
+        path: '/sumber-daya/guru-besar',
         name: 'GuruBesar',
         component: GuruBesar,
       },
       {
-        path: '/sumber_daya/tenagaKependidikan',
+        path: '/sumber-daya/tenaga-kependidikan',
         name: 'TenagaKependidikan',
         component: TenagaKependidikan,
       },
       {
-        path: '/sumber_daya/saranaPrasarana',
+        path: '/sumber-daya/sarana-prasarana',
         name: 'SaranaPrasarana',
         component: SaranaPrasarana,
       },
       {
-        path: '/sumber_daya/perpustakaan',
+        path: '/sumber-daya/perpustakaan',
         name: 'Perpustakaan',
         component: Perpustakaan,
       },
@@ -159,42 +164,42 @@ export default new Router({
         component: Manajemen,
       },
       { //k3
-        path: '/k3/profile',
+        path: '/k3/profile-k3',
         name: 'ProfilK3',
         component: ProfilK3,
       },
       {
-        path: '/k3/strukturOrganisasi',
+        path: '/k3/struktur-organisasi-k3',
         name: 'StrukturOrganisasik3',
         component: StrukturOrganisasik3,
       },
       {
-        path: '/k3/tentang',
+        path: '/k3/tentang-k3-ft-uh',
         name: 'TentangK3',
         component: TentangK3,
       },
       {
-        path: '/k3/file',
+        path: '/k3/file-pendukung',
         name: 'FilePendukung',
         component: FilePendukung,
       },
       { //kemahasiswaan
-        path: '/kemahasiswaan/ramtek',
+        path: '/kemahasiswaan/upt-asrama-ramtek',
         name: 'Ramtek',
         component: Ramtek,
       },
       { 
-        path: '/kemahasiswaan/pengembanganKarakter',
+        path: '/kemahasiswaan/pengembangan-karakter-mahasiswa',
         name: 'PengembanganKarakter',
         component: PengembanganKarakter,
       },
       { 
-        path: '/kemahasiswaan/peningkatanPrestasi',
+        path: '/kemahasiswaan/peningkatan-prestasi-mahasiswa',
         name: 'PeningkatanPrestasi',
         component: PeningkatanPrestasi,
       },
       { 
-        path: '/kemahasiswaan/inboundOutbound',
+        path: '/kemahasiswaan/mahasiswa-inbound-dan-outbound',
         name: 'MahasiswaInOutbound',
         component: MahasiswaInOutbound,
       },
@@ -204,7 +209,7 @@ export default new Router({
         component: Alumni,
       },
       { 
-        path: '/kemahasiswaan/aturan',
+        path: '/kemahasiswaan/aturan-kemahasiswaan',
         name: 'AturanKemahasiswaan',
         component: AturanKemahasiswaan,
       },
@@ -219,27 +224,27 @@ export default new Router({
         component: ProfilGPMPR,
       },
       { 
-        path: '/gpm-pr/dokumenMutu',
+        path: '/gpm-pr/dokumen-mutu',
         name: 'DokumenMutu',
         component: DokumenMutu,
       },
       { 
-        path: '/gpm-pr/auditMutu',
+        path: '/gpm-pr/audit-mutu-akademik-internal',
         name: 'AuditMutu',
         component: AuditMutu,
       },
       { 
-        path: '/gpm-pr/lamTeknik',
+        path: '/gpm-pr/lam-teknik',
         name: 'LAMteknik',
         component: LAMteknik,
       },
       { 
-        path: '/gpm-pr/laporanKepuasan',
+        path: '/gpm-pr/laporan-kepuasan-pengguna',
         name: 'LaporanKepuasan',
         component: LaporanKepuasan,
       },
       { 
-        path: '/gpm-pr/surveiKepuasan',
+        path: '/gpm-pr/survei-kepuasan-layanan-mahasiswa',
         name: 'SurveiKepuasan',
         component: SurveiKepuasan,
       },
@@ -249,58 +254,58 @@ export default new Router({
         component: GaleriGPMPR,
       },
       { //cot
-        path: '/cot/website',
+        path: '/cot/cot-website',
         name: 'Website',
         component: Website,
       },
       {
-        path: '/cot/jurnal',
+        path: '/cot/jurnal-cot',
         name: 'Jurnal',
         component: Jurnal,
       },
       {
-        path: '/cot/newsletter',
+        path: '/cot/cot-newsletter',
         name: 'Newsletter',
         component: Newsletter,
       },
       {
-        path: '/cot/uigcolab',
+        path: '/cot/u-i-g-collaboration',
         name: 'UIGcolab',
         component: UIGcolab,
       },
       { //dharma
-        path: '/dharma_wanita/halamanUtama',
+        path: '/dharma_wanita/halaman-utama',
         name: 'HalamanUtama',
         component: HalamanUtama,
       },
       {
-        path: '/dharma_wanita/strukturOrganisasi',
+        path: '/dharma_wanita/struktur-organisasi-dharmawanita',
         name: 'strukturOrganisasiDharma',
         component: strukturOrganisasiDharma,
       },
   
       {
-        path: '/kemitraan/luarNegeri',
+        path: '/kemitraan/kemitraan-luar-negeri',
         name: 'LuarNegeri',
         component: LuarNegeri,
       },
       {
-        path: '/kemitraan/dalamNegeri',
+        path: '/kemitraan/kemitraan-dalam-negeri',
         name: 'DalamNegeri',
         component: DalamNegeri,
       },
       {
-        path: '/riset_dan_inovasi/haki',
+        path: '/riset-dan-inovasi/hak-kekayaan-intelektual',
         name: 'Haki',
         component: Haki,
       },
       {
-        path: '/riset_dan_inovasi/inovasi',
+        path: '/riset_dan_inovasi/hak-inovasi',
         name: 'Inovasi',
         component: Inovasi,
       },
       {
-        path: '/riset_dan_inovasi/penelitian',
+        path: '/riset_dan_inovasi/daftar-penelitian-lbe-tahun-2020',
         name: 'Penelitian',
         component: Penelitian,
       },
