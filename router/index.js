@@ -19,10 +19,10 @@ import Profesi from '@/pages/akademik/program-profesi.vue';
 import KalendarAkademik from '@/pages/akademik/kalender-akademik.vue';
 
 //sumber daya
-import GuruBesar from '@/pages/sumber_daya/guru_besar.vue';
-import TenagaKependidikan from '@/pages/sumber_daya/tenagaKependidikan.vue';
-import SaranaPrasarana from '@/pages/sumber_daya/saranaPrasarana.vue';
-import Perpustakaan from '@/pages/sumber_daya/perpustakaan.vue';
+import GuruBesar from '@/pages/sumber-daya/guru-besar.vue';
+import TenagaKependidikan from '@/pages/sumber-daya/tenaga-kependidikan.vue';
+import SaranaPrasarana from '@/pages/sumber-daya/sarana-dan-prasarana.vue';
+import Perpustakaan from '@/pages/sumber-daya/perpustakaan.vue';
 
 //k3
 import ProfilK3 from '@/pages/k3/profil-k3.vue';
