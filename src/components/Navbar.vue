@@ -137,9 +137,9 @@
         <div class="hidden xl:flex">
           <a href="#" class="hover:bg-red-500 text-white">DHARMA WANITA</a>
           <div class="submenu hidden absolute bg-merahdesain z-20 mt-4 py-2 px-4 text-white shadow-lg">
-            <router-link to="/dharma_wanita/halaman-utama" class="py-2 block hover:bg-red-500">HALAMAN UTAMA DHARMA
+            <router-link to="/dharma-wanita/halaman-utama" class="py-2 block hover:bg-red-500">HALAMAN UTAMA DHARMA
               WANITA</router-link>
-            <router-link to="/dharma_wanita/struktur-organisasi-dharmawanita" class="py-2 block hover:bg-red-500">STRUKTUR
+            <router-link to="/dharma-wanita/struktur-organisasi-dharmawanita" class="py-2 block hover:bg-red-500">STRUKTUR
               ORGANISASI DHARMAWANITA</router-link>
           </div>
           <img loading="lazy" src="../assets/footer/dropdown.png"

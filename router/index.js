@@ -64,8 +64,8 @@ import Newsletter from '@/pages/cot/newsletter.vue';
 import UIGcolab from '@/pages/cot/uigcolab.vue';
 
 //dharmawanita
-import HalamanUtama from '@/pages/dharma_wanita/halamanUtama.vue';
-import strukturOrganisasiDharma from '@/pages/dharma_wanita/strukturOrganisasi.vue';
+import HalamanUtama from '@/pages/dharma-wanita/halamanUtama.vue';
+import strukturOrganisasiDharma from '@/pages/dharma-wanita/strukturOrganisasi.vue';
 
 
 
@@ -274,12 +274,12 @@ export default new Router({
         component: UIGcolab,
       },
       { //dharma
-        path: '/dharma_wanita/halaman-utama',
+        path: '/dharma-wanita/halaman-utama',
         name: 'HalamanUtama',
         component: HalamanUtama,
       },
       {
-        path: '/dharma_wanita/struktur-organisasi-dharmawanita',
+        path: '/dharma-wanita/struktur-organisasi-dharmawanita',
         name: 'strukturOrganisasiDharma',
         component: strukturOrganisasiDharma,
       },
