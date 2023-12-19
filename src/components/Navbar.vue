@@ -44,10 +44,10 @@
             class="aspect-square object-cover object-center w-4 overflow-hidden self-center shrink-0 my-auto" />
         </div>
         <div class=" hidden xl:flex">
-          <a href="#" class="hover:text-red-500 text-white">K3</a>
+          <a href="#" class="hover:bg-red-500 text-white">K3</a>
           <div class="submenu hidden absolute bg-merahdesain z-20 mt-4 py-2 px-4 text-white shadow-lg">
             <a href="/k3/profil-k3" class="py-2 block hover:bg-red-500">PROFIL K3</a>
-            <a href="/k3/struktur-organisasi-k3" class="py-2 block hover:bg-red-500">STRUKTUR ORGANISASI</a>
+            <a href="/k3/struktur-organisasi-k3" class="py-2 block hover:bg-red-500">STRUKTUR ORGANISASI K3</a>
             <a href="/k3/tentang-k3-ft-uh" class="py-2 block hover:bg-red-500">TENTANG K3 FT-UH</a>
             <a href="/k3/file-pendukung" class="py-2 block hover:bg-red-500">FILE PENDUKUNG</a>
           </div>
