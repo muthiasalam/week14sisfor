@@ -42,19 +42,19 @@
       const data = await response.json();
   
       // Assuming there's only one item in the response data array
-      const item = data.data[1]; // Use index 1 to get the second item (index 0 is for "Sejarah Singkat")
+      const item = data.data[1]; 
   
       // Extracting values for "Visi"
-      heading.value = item.Heading1 || '';
-      konten.value = item.Konten1 || '';
+      heading.value = item.Heading[0].Heading || '';
+      konten.value = item.Konten[0].Konten || '';
   
       // Extracting values for "Misi"
-      heading2.value = item.Heading2 || '';
-      konten2.value = item.Konten2 || '';
+      heading2.value = item.Heading[1].Heading || '';
+      konten2.value = item.Konten[1].Konten || '';
   
       // Extracting values for "Sasaran"
-      heading3.value = item.Heading3 || '';
-      konten3.value = item.Konten3 || '';
+      heading3.value = item.Heading[2].Heading || '';
+      konten3.value = item.Konten[2].Konten || '';
     } catch (error) {
       console.error('Error fetching data:', error);
     }
