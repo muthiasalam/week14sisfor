@@ -28,7 +28,7 @@
       const item = data.data[2];
   
       const foto1Id = item.Foto1;
-      const foto1Url = `http://localhost:8055/assets/${foto1Id}`;
+      const foto1Url = `http://localhost:8055/assets/d6f67fac-1a8b-4025-9e09-8943fc896455`;
       fotoUrl.value = foto1Url;
   
       // Extracting "Heading" and "Konten" values

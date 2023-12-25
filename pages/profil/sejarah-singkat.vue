@@ -30,8 +30,8 @@
       // Assuming there's only one item in the response data array
       const item = data.data[0];
   
-      const foto1Id = item.Foto1;
-      const foto1Url = `http://localhost:8055/assets/${foto1Id}`;
+      
+      const foto1Url = `http://localhost:8055/assets/168a26f3-ee92-4c19-ba70-d05e82ac082f`;
       fotoUrl.value = foto1Url;
   
       // Extracting "Heading" and "Konten" values
